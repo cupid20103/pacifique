@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Forum";
+  src: url("/src/assets/fonts/Forum/Forum-Regular.ttf");
+}
+@font-face {
+  font-family: "Maragsa";
+  src: url("/src/assets/fonts/Maragsa/Maragsâ.otf");
+}
+
+html,
+body {
+  margin: 0;
+  font-family: Maragsa, Forum, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffefd1;
+  color: #5a5b44;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: #111;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(17, 17, 17, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+}
