@@ -9,7 +9,11 @@ export const FriendContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 0 100px 50px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 50px 50px;
+  }
 `;
 
 export const FriendTitle = styled.div`
@@ -53,22 +57,19 @@ export const FriendTitle = styled.div`
 `;
 
 export const FrinedContent = styled.div`
-  width: 85%;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 25px;
   @media screen and (max-width: 1024px) {
-    width: 95%;
     gap: 15px;
   }
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
     grid-template-columns: auto auto;
     gap: 50px;
   }
   @media screen and (max-width: 425px) {
-    width: 75%;
     grid-template-columns: auto;
-    gap: 50px;
   }
 `;

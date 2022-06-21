@@ -8,8 +8,10 @@ export const FondationContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0 50px;
   }
 `;
 
@@ -26,14 +28,14 @@ export const FondationLeft = styled.div`
     border-right: none;
     padding-bottom: 30px;
     img {
-      width: 50%;
+      width: 80%;
       height: auto;
     }
   }
   @media screen and (max-width: 425px) {
     padding-bottom: 15px;
     img {
-      width: 75%;
+      width: 95%;
       height: auto;
     }
   }
@@ -45,7 +47,6 @@ export const FondationRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 50px;
   h3 {
     font-size: 48px;
     font-weight: 400;
@@ -62,11 +63,13 @@ export const FondationRight = styled.div`
     color: #ffefd1;
   }
   p {
+    width: 90%;
     font-family: Forum;
     padding: 25px 0;
     font-weight: 400;
     line-height: 18px;
     color: #ffefd1;
+    word-break: break-all;
   }
   @media screen and (max-width: 1024px) {
     h3 {
@@ -93,6 +96,9 @@ export const FondationRight = styled.div`
     }
     b {
       font-size: 16px;
+    }
+    p {
+      width: 100%;
     }
   }
   @media screen and (max-width: 425px) {

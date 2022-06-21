@@ -37,7 +37,7 @@ export const NatureContent = styled.div`
     font-weight: 400;
   }
   p {
-    width: 65%;
+    width: 60%;
     font-family: "Forum";
     font-size: 22px;
     font-weight: 400;
@@ -60,6 +60,7 @@ export const NatureContent = styled.div`
     }
     p {
       width: 100%;
+      font-size: 18px;
     }
   }
   @media screen and (max-width: 425px) {

@@ -8,8 +8,10 @@ export const FAQContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0 50px;
   }
 `;
 
@@ -23,7 +25,7 @@ export const FAQLeft = styled.div`
     width: 50%;
   }
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     border-right: none;
     padding-bottom: 30px;
   }
@@ -35,7 +37,6 @@ export const FAQRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 50px;
   h3 {
     font-size: 48px;
     font-weight: 400;
@@ -60,7 +61,7 @@ export const FAQRight = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    width: 75%;
+    width: 100%;
     padding: 30px 0;
     align-items: center;
     text-align: center;

@@ -32,13 +32,10 @@ const Vision = () => {
           <h3>{"Vision"}</h3>
           <VisionContent>
             <p>
-              {
-                "Pacifique Avant Garde is a multicultural experience. A creative universe willing to provide timeless experiences and spaces where humans can connect, learn and relax."
-              }
-              <br />
+              {"Pacifique Avant Garde is a multicultural experience."}
               <br />
               {
-                "We want to take you to an emotional journey full of flavors, wellbeing, discoveries and memories; our vision of living."
+                "A creative universe willing to provide timeless experiences and spaces where humans can connect, learn and relax."
               }
               <br />
               <br />

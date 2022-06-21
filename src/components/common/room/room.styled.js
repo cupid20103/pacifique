@@ -50,6 +50,7 @@ export const RoomText = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+    word-break: break-all;
   }
   @media screen and (max-width: 1024px) {
     h3 {

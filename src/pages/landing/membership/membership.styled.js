@@ -17,18 +17,21 @@ export const MemberContainer = styled.div`
 `;
 
 export const MemberContent = styled.div`
-  width: 50%;
+  width: 45%;
   h3 {
-    width: 65%;
     font-size: 48px;
     line-height: 50px;
     font-weight: 400;
     text-transform: uppercase;
   }
+  b {
+    font-family: Maragsa;
+  }
   p {
     font-family: Forum;
     font-weight: 400;
     line-height: 18px;
+    word-break: break-all;
   }
   @media screen and (max-width: 1024px) {
     width: 65%;
@@ -62,6 +65,9 @@ export const MemberContent = styled.div`
 
 export const MemberActions = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    justify-content: space-around;
+  }
 `;

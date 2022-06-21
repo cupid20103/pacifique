@@ -34,9 +34,10 @@ export const HeroContent = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1440px;
-  width: 60%;
+  width: 100%;
   height: 100%;
   margin: auto;
+  padding-top: 75px;
   z-index: 0;
   color: #ffefd1;
   text-align: center;
@@ -82,6 +83,8 @@ export const HeroSubTitle = styled.div`
   p {
     padding: 0 10px;
     font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
     text-transform: uppercase;
   }
   & > :not(:last-child) {

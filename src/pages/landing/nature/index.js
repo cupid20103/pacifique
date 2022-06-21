@@ -18,9 +18,11 @@ const Nature = () => {
         >
           <NatureContent>
             <h3>
-              {"Authentic, smart & timeless"}
+              {"Authentic, smart &"}
               <br />
-              {"EcoRetreats for mindful travelers"}
+              {"timeless Eco-Retreats"}
+              <br />
+              {"for mindful travelers"}
             </h3>
             <p>
               {

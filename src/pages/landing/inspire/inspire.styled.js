@@ -8,7 +8,7 @@ export const InspireContainer = styled.div`
   padding: 0 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   h3 {
@@ -21,10 +21,11 @@ export const InspireContainer = styled.div`
   @media screen and (max-width: 1024px) {
     h3 {
       font-size: 40px;
+      line-height: 1.2;
     }
   }
   @media screen and (max-width: 768px) {
-    padding-bottom: 50px;
+    padding: 0 50px 50px;
     h3 {
       font-size: 32px;
     }
@@ -36,43 +37,23 @@ export const InspireContainer = styled.div`
   }
 `;
 
-export const InspireContent = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  p {
-    font-family: Forum;
-    font-size: 20px;
-    color: #ffefd1;
-    letter-spacing: 2px;
-    line-height: 22px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  img {
-    width: 30%;
-  }
+export const InspireContent = styled.p`
+  color: #ffefd1;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
   @media screen and (max-width: 1024px) {
-    p {
-      font-size: 18px;
-    }
+    font-size: 18px;
   }
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    padding: 25px 0;
-    img {
-      width: 50%;
-    }
-    p {
-      font-size: 16px;
-    }
+    padding: 50px 0;
+    font-size: 16px;
   }
   @media screen and (max-width: 425px) {
-    img {
-      width: 65%;
-    }
-    p {
-      font-size: 14px;
-    }
+    padding: 25px 0;
+    font-size: 14px;
   }
 `;

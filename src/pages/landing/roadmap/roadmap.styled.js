@@ -8,8 +8,10 @@ export const RoadmapContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0px;
   }
 `;
 

@@ -47,7 +47,7 @@ const Hospital = () => {
         >
           <HospitalGallery1>
             <HospitalWindow pic={window} alt={"window"} />
-            <HospitalGirl pic={girl} alt={"girl"} />
+            <HospitalGirl pic={drink} alt={"girl"} />
           </HospitalGallery1>
           <HospitalGallery2>
             <HospitalDrink pic={drink} alt={"drink"} />

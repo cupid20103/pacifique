@@ -13,22 +13,23 @@ import {
 
 const MemberShip = () => {
   return (
-    <Section
-      paddingTop={"0"}
-      image={membershipBG}
-      bgsize={"50% 100%"}
-      bgpos={"right"}
-    >
+    <Section image={membershipBG} bgsize={"50% 100%"} bgpos={"right"}>
       <MemberContainer>
         <MemberContent
           data-aos="fade-up"
           data-aos-duration={"1500"}
           className="aos-init aos-animate"
         >
-          <h3>{"Your Membership becomes a digital asset"}</h3>
+          <h3>
+            {"Your"}
+            <br /> {"Membership"}
+            <br /> {"becomes a"}
+            <br /> {"digital asset"}
+          </h3>
           <p>
+            <b>{"Pacifique Humans Club "}</b>
             {
-              "Pacifique Humans Club is your exclusive laidback club, where membership is purchased as a NFT on the blockchain. "
+              "is your exclusive laidback club, where membership is purchased as a NFT on the blockchain. "
             }
             <br />
             <br />
@@ -42,9 +43,9 @@ const MemberShip = () => {
             }
             <br />
             <br />
-            {
-              "We plan on opening multiple locations around the world. The first one will be in 31°38′07″N 8°00′01″W"
-            }
+            {"We plan on opening multiple locations around the world."}
+            <br />
+            {"The first one will be in 31°38′07″N 8°00′01″W"}
           </p>
           <MemberActions>
             <Action link={"/benefits"} content={"Membership Benefits"} />

@@ -10,6 +10,9 @@ export const IntroContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
 `;
 
 export const IntroHeader = styled.div`
@@ -28,11 +31,11 @@ export const IntroHeader = styled.div`
     text-transform: uppercase;
   }
   p {
+    width: 30%;
     font-family: "Forum";
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
-    width: 30%;
     padding-left: 10%;
   }
   @media screen and (max-width: 1024px) {
@@ -52,6 +55,8 @@ export const IntroHeader = styled.div`
     p {
       font-size: 14px;
       width: 40%;
+      line-height: 1.2;
+      word-break: break-all;
     }
     img {
       width: 20%;

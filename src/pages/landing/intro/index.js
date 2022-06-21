@@ -37,9 +37,9 @@ const Intro = () => {
             data-aos-duration={"1500"}
             className="aos-init aos-animate"
           >
-            {
-              "Our vision is crystal clear. This are some renderings we’ve made back in 2020."
-            }
+            {"Our vision is crystal clear."}
+            <br />
+            {"This are some renderings we’ve made back in 2020."}
           </p>
         </IntroHeader>
         <IntroFooter>

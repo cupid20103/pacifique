@@ -21,7 +21,11 @@ const Hero = () => {
         </video>
       </HeroBack>
       <HeroContent>
-        <h2>{"Raw & Authentic Experiences"}</h2>
+        <h2>
+          {"Raw & Authentic"}
+          <br />
+          {"Experiences"}
+        </h2>
         <HeroSubTitle>
           <p>{"Wellbeing"}</p>
           <p>{"Culture"}</p>

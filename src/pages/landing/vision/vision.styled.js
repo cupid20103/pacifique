@@ -49,11 +49,11 @@ export const VisionLeft = styled.div`
 `;
 
 export const VisionContent = styled.div`
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  letter-spacing: 1px;
   p {
     font-family: Forum;
     padding: 25px 0;
@@ -67,6 +67,7 @@ export const VisionContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    width: 100%;
     align-items: center;
     text-align: center;
     p {

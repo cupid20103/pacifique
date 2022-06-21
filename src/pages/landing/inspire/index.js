@@ -1,9 +1,6 @@
 import React from "react";
 // @import components
 import Section from "../../../components/common/section";
-// @import resources
-import shop from "../../../assets/images/shop.svg";
-import giraffe from "../../../assets/images/giraffe.svg";
 // @import styles
 import { InspireContainer, InspireContent } from "./inspire.styled";
 // @import resources
@@ -20,32 +17,16 @@ const Inspire = () => {
         >
           {"inspired by human connection ╮"}
         </h3>
-        <InspireContent>
-          <img
-            src={shop}
-            alt="shop"
-            data-aos="fade-up"
-            data-aos-duration={"1500"}
-            className="aos-init aos-animate"
-          />
-          <p
-            data-aos="fade-up"
-            data-aos-duration={"1700"}
-            className="aos-init aos-animate"
-          >
-            {"LIFE CHANGING EXPERIENCES"}
-            <br />
-            {"AUTHENTIC + INTIMATE"}
-            <br />
-            {"IN SEARCH OF THE ESSENTIAL"}
-          </p>
-          <img
-            src={giraffe}
-            alt="giraffe"
-            data-aos="fade-up"
-            data-aos-duration={"1500"}
-            className="aos-init aos-animate"
-          />
+        <InspireContent
+          data-aos="fade-up"
+          data-aos-duration={"1500"}
+          className="aos-init aos-animate"
+        >
+          {"LIFE CHANGING EXPERIENCES"}
+          <br />
+          {"AUTHENTIC + INTIMATE"}
+          <br />
+          {"IN SEARCH OF THE ESSENTIAL"}
         </InspireContent>
         <h3
           data-aos="fade-up"

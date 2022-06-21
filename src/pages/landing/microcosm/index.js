@@ -20,7 +20,7 @@ import {
 
 const Microcosm = () => {
   return (
-    <Section image={microcosm}>
+    <Section image={microcosm} height={"80vh"}>
       <MicrocosmContainer>
         <MicrocosmContent>
           <MicrocosmLeft
@@ -28,7 +28,11 @@ const Microcosm = () => {
             data-aos-duration={"1500"}
             className="aos-init aos-animate"
           >
-            <h3>{"Pacifique avant garde"}</h3>
+            <h3>
+              {"Pacifique"}
+              <br />
+              {"avant garde"}
+            </h3>
             <p>
               {
                 "Join a community of likeminded Humans, willing to give birth to unforettable memories and live unique experience."

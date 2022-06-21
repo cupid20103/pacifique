@@ -10,6 +10,10 @@ export const MicrocosmContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
 `;
 
 export const MicrocosmContent = styled.div`
@@ -28,7 +32,6 @@ export const MicrocosmLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 100px;
   h3 {
     font-size: 48px;
     font-weight: 400;
@@ -40,10 +43,10 @@ export const MicrocosmLeft = styled.div`
     padding: 25px 0;
     font-weight: 400;
     line-height: 18px;
+    width: 75%;
   }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
-    padding: 0 25px;
     h3 {
       font-size: 40px;
     }
@@ -58,6 +61,9 @@ export const MicrocosmLeft = styled.div`
     h3 {
       font-size: 32px;
       line-height: 1.2;
+    }
+    p {
+      width: 100%;
     }
   }
   @media screen and (max-width: 425px) {
@@ -78,7 +84,6 @@ export const MicrocosmRight = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 50px;
   img {
     width: 50%;
   }
@@ -113,9 +118,9 @@ export const MicrocosmRight = styled.div`
 `;
 
 export const ActionGroup = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding-top: 25px;
   a {
@@ -127,6 +132,7 @@ export const ActionGroup = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
     &:hover {
       background-color: #ffefd1;
       svg {
@@ -145,10 +151,11 @@ export const ActionGroup = styled.div`
     a {
       width: 25px;
       height: 25px;
+      margin: 3px;
     }
     svg {
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
     }
   }
 `;
