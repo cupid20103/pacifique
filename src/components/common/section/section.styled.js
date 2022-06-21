@@ -6,7 +6,9 @@ export const SectionContainer = styled.section`
   padding-top: ${(props) => props.paddingTop};
   background-color: ${(props) => props.color};
   background-image: url(${(props) => props.image});
-  background-size: 100% 100%;
+  background-size: ${(props) => props.bgsize};
+  background-position: ${(props) => props.bgpos};
+  background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     height: fit-content;
   }

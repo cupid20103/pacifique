@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import nature from "../../../assets/images/nature.jpg";
 
 export const NatureContainer = styled.div`
   width: 100%;
@@ -7,10 +6,8 @@ export const NatureContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 0 100px;
-  background-image: url(${nature});
-  background-size: 100% 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: auto;
   @media screen and (max-width: 768px) {
     padding: 0 75px;
   }

@@ -1,14 +1,13 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.div`
   width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  height: 75px;
-  margin: 0 auto;
   z-index: 200;
   animation: loader 3s ease-in-out;
   @keyframes loader {
@@ -66,24 +65,11 @@ export const HeaderColor = styled.div`
   z-index: -50;
 `;
 
-const menu = keyframes`
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
 export const HeaderAction = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  animation: ${menu} 6s ease-in-out none;
   p {
     visibility: hidden;
   }
@@ -235,42 +221,9 @@ export const MenuImage = styled.img`
 export const HeaderTitle = styled(Link)`
   font-size: 24px;
   text-transform: uppercase;
-  padding-left: 100px;
-  animation: title 6s ease-in-out;
   cursor: pointer;
-  @keyframes title {
-    0% {
-      color: white;
-    }
-    30% {
-      color: white;
-    }
-    100% {
-      color: auto;
-    }
-  }
   @media screen and (max-width: 425px) {
-    padding-left: 50px;
     font-size: 16px;
-    text-align: center;
-  }
-`;
-
-export const WallecConnect = styled.div`
-  font-size: 18px;
-  border: 2px solid #5a5b44;
-  border-radius: 10px;
-  padding: 5px 10px;
-  animation: ${menu} 6s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    color: #ffefd1;
-    background-color: #5a5b44;
-  }
-  transition: all 0.5s ease;
-  @media screen and (max-width: 425px) {
-    padding: 5px 5px;
-    font-size: 12px;
     text-align: center;
   }
 `;

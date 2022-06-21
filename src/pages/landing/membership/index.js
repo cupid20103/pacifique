@@ -2,6 +2,8 @@ import React from "react";
 // @import components
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
+// @import resources
+import membershipBG from "../../../assets/images/membership_bg.svg";
 // @import styles
 import {
   MemberActions,
@@ -11,7 +13,12 @@ import {
 
 const MemberShip = () => {
   return (
-    <Section>
+    <Section
+      paddingTop={"0"}
+      image={membershipBG}
+      bgsize={"50% 100%"}
+      bgpos={"right"}
+    >
       <MemberContainer>
         <MemberContent
           data-aos="fade-up"

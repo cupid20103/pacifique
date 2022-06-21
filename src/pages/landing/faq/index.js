@@ -10,7 +10,7 @@ import { FAQContainer, FAQLeft, FAQRight } from "./faq.styled";
 
 const FAQ = () => {
   return (
-    <Section id={"faq"} color="#5A5B44" image={faq} paddingTop={"0"}>
+    <Section id={"faq"} paddingTop={"0"} color="#5A5B44" image={faq}>
       <FAQContainer>
         <FAQLeft
           data-aos="fade-up"

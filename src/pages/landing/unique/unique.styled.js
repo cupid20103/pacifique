@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import unique from "../../../assets/images/unique.png";
 import uniqueform from "../../../assets/images/form.svg";
 
 export const UniqueFormContainer = styled.div`
@@ -9,10 +8,6 @@ export const UniqueFormContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(${unique});
-  background-size: 100% 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
   padding: 50px 0;
 `;
 

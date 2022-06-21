@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
-  height: 75px;
   width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -148,7 +148,7 @@ export const MenuContactActions = styled.div`
     opacity: 1;
   }
   & > :not(:last-child) {
-    border-right: 2px solid #333;
+    border-right: 2px solid #5a5b44;
   }
   @media screen and (max-width: 1024px) {
     a {
@@ -181,7 +181,7 @@ export const HeaderTitle = styled(Link)`
   text-transform: uppercase;
   cursor: pointer;
   @media screen and (max-width: 425px) {
-    padding-left: 0px;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
   }
 `;

@@ -2,12 +2,14 @@ import React from "react";
 import Action from "../../../components/common/action";
 // @import components
 import Section from "../../../components/common/section";
+// @import resources
+import nature from "../../../assets/images/nature.jpg";
 // @import styles
 import { NatureContainer, NatureContent, NatureGroup } from "./nature.styled";
 
 const Nature = () => {
   return (
-    <Section paddingTop={"0"} height={"80vh"}>
+    <Section paddingTop={"0"} height={"80vh"} image={nature}>
       <NatureContainer>
         <NatureGroup
           data-aos="fade-up"

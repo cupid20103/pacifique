@@ -4,6 +4,7 @@ import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
 // @import resources
 import visionCT from "../../../assets/images/vision_content.svg";
+import visionBG from "../../../assets/images/vision_bg.png";
 // @import styles
 import {
   VisionContainer,
@@ -15,7 +16,13 @@ import {
 
 const Vision = () => {
   return (
-    <Section paddingTop={"0"} height={"80vh"}>
+    <Section
+      paddingTop={"0"}
+      height={"80vh"}
+      image={visionBG}
+      bgsize={"100% 75%"}
+      bgpos={"bottom"}
+    >
       <VisionContainer>
         <VisionLeft
           data-aos="fade-up"

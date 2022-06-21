@@ -1,17 +1,14 @@
 import styled from "styled-components";
-import visionBG from "../../../assets/images/vision_bg.png";
 
 export const VisionContainer = styled.div`
   width: 100%;
   height: 100%;
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 100px;
-  background-image: url(${visionBG});
-  background-size: 100% 75%;
-  background-position: bottom;
-  background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;

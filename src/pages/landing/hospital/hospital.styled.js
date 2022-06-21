@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const HospitalContainer = styled.div`
   width: 100%;
   height: 100%;
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;

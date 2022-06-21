@@ -1,19 +1,14 @@
 import styled from "styled-components";
-import membershipBG from "../../../assets/images/membership_bg.svg";
 
 export const MemberContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 0 100px;
   max-width: 1440px;
   margin: auto;
-  width: 100%;
-  padding: 0 100px;
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(${membershipBG});
-  background-size: 50% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     background-size: 100% 75%;

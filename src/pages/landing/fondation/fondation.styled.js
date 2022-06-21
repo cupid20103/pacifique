@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const FondationContainer = styled.div`
-  max-width: 1440px;
   width: 100%;
   height: 100%;
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
