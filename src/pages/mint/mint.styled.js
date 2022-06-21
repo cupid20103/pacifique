@@ -115,7 +115,12 @@ export const ConnectWallet = styled.div`
   color: #333;
   border-radius: 10px;
   padding: 10px;
+  transition: all 0.5s ease;
   cursor: pointer;
+  &:hover {
+    color: #ffefd1;
+    background-color: #5a5b44;
+  }
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }

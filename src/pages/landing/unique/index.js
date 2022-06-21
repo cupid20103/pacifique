@@ -38,7 +38,7 @@ const Unique = () => {
             </UniqueContent>
             <UniqueFormHand src={hand} alt={"hand"} />
             <UniqueFormData>
-              <ConnectWallet>{"Connect Wallet"}</ConnectWallet>
+              <ConnectWallet to={"/mint"}>{"Connect Wallet"}</ConnectWallet>
             </UniqueFormData>
           </UniqueFormMain>
         </UniqueFormContent>

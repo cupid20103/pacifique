@@ -14,7 +14,6 @@ import Vision from "./vision";
 import Roadmap from "./roadmap";
 import FAQ from "./faq";
 import Microcosm from "./microcosm";
-import Mint from "./mint";
 import Unique from "./unique";
 import Friend from "./friend";
 
@@ -26,7 +25,6 @@ const Landing = () => {
       <Nature />
       <MemberShip />
       <Unique />
-      <Mint />
       <Inspire />
       <Intro />
       <Hospital />

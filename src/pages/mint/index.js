@@ -1,5 +1,4 @@
 import React from "react";
-// import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 // @import layouts
 import { MintLayout } from "../../layouts";
@@ -20,7 +19,6 @@ import {
 } from "./mint.styled";
 
 const MintForm = () => {
-  // const { slug } = useParams();
   const { provider, currentAcc } = useEthContext();
 
   const handleConnectWallet = async () => {
@@ -50,7 +48,6 @@ const MintForm = () => {
               <MintFormPrice>
                 {"PRICE | "}
                 {"0.3 ETH"}
-                {/* {slug !== "1" ? "0.3 ETH" : "0.6 ETH"} */}
               </MintFormPrice>
               <MintFormAmount>
                 <p>{"Quantity"}</p>

@@ -108,9 +108,10 @@ export const MenuPageActions = styled.div`
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.5s ease;
     cursor: pointer;
     &:hover {
-      color: #5a5b44;
+      color: #000;
     }
   }
   &.active-function {
@@ -143,6 +144,10 @@ export const MenuContactActions = styled.div`
   transition: opacity 1s ease-in-out;
   a {
     padding: 0 10px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #000;
+    }
   }
   &.active-function {
     opacity: 1;

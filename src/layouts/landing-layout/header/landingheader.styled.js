@@ -9,49 +9,6 @@ export const HeaderContainer = styled.div`
   align-items: center;
   position: fixed;
   z-index: 200;
-  animation: loader 3s ease-in-out;
-  @keyframes loader {
-    0% {
-      height: 100vh;
-      background-color: #ffefd1;
-    }
-    100% {
-      height: 75px;
-      background-color: transparent;
-    }
-  }
-  @media screen and (max-width: 425px) {
-    justify-content: space-evenly;
-  }
-`;
-
-export const HeaderOverlay = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  animation: bgLoader 5s ease-in-out;
-  @keyframes bgLoader {
-    0% {
-      opacity: 1;
-      display: block;
-      background-color: #ffffffff;
-      z-index: 50;
-    }
-    65% {
-      opacity: 1;
-      display: block;
-      background-color: #ffffffff;
-      z-index: 50;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-      background-color: transparent;
-      z-index: 0;
-    }
-  }
 `;
 
 export const HeaderColor = styled.div`
@@ -150,9 +107,10 @@ export const MenuPageActions = styled.div`
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.5s ease;
     cursor: pointer;
     &:hover {
-      color: #5a5b44;
+      color: #000;
     }
   }
   &.active-function {
@@ -185,6 +143,10 @@ export const MenuContactActions = styled.div`
   transition: opacity 1s ease-in-out;
   a {
     padding: 0 10px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #000;
+    }
   }
   &.active-function {
     opacity: 1;

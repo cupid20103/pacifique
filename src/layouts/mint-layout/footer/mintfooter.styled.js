@@ -30,6 +30,11 @@ export const FooterActions = styled.div`
   }
 `;
 
-export const FooterAction = styled.div`
+export const FooterAction = styled.a`
   padding: 0 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    color: #000;
+  }
 `;

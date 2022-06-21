@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 // @import resource
 import city from "../../../assets/images/city.jpg";
-import { contacts } from "./data";
+import { contacts } from "../../data";
 // @import styles
 import {
   HeaderAction,
