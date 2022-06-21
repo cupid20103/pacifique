@@ -34,7 +34,7 @@ export const IntroContent = styled.div`
   h3 {
     font-size: 48px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 50px;
     text-transform: uppercase;
   }
   b {
@@ -100,7 +100,7 @@ export const IntroRight = styled.div`
   h3 {
     font-size: 48px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 50px;
     text-transform: uppercase;
     padding: 10px 0 15px 0;
   }

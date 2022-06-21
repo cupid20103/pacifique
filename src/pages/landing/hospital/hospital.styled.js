@@ -35,7 +35,7 @@ export const HospitalContent = styled.div`
   align-items: flex-start;
   h3 {
     font-size: 48px;
-    line-height: 48px;
+    line-height: 50px;
     font-weight: 400;
     text-transform: uppercase;
   }

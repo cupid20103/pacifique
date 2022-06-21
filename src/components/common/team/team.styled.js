@@ -51,6 +51,7 @@ export const TeamInfo = styled.div`
   margin: 10px 0;
   gap: 20px;
   a {
+    border: 1px solid #5a5b44;
     border-radius: 50%;
     background-color: #5a5b44;
     width: 25px;
@@ -58,10 +59,17 @@ export const TeamInfo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  svg {
-    color: #ddccb2;
-    width: 15px;
-    height: 15px;
+    &:hover {
+      background-color: #ffefd1;
+      svg {
+        color: #5a5b44;
+      }
+    }
+    transition: all 0.5s ease;
+    svg {
+      color: #ffefd1;
+      width: 15px;
+      height: 15px;
+    }
   }
 `;

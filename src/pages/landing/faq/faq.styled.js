@@ -38,7 +38,7 @@ export const FAQRight = styled.div`
   h3 {
     font-size: 48px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #ffefd1;
     width: 50%;

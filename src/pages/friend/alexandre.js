@@ -8,8 +8,6 @@ const Alexandre = () => {
   return (
     <FriendSection image={alexandre}>
       <b>{"Alexandre Santamaria | Partner - Hospitality, F&B"}</b>
-      <br />
-      <br />
       <p>
         {
           "Alex started his career at the age of 20 as private to the French Ambassador in London. Rapidly moving up through the ranks, Alex held various management position within international luxury 5 star hotels in Paris, London and Beirut."

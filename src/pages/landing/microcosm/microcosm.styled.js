@@ -30,7 +30,7 @@ export const MicrocosmLeft = styled.div`
   h3 {
     font-size: 48px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 50px;
     text-transform: uppercase;
   }
   p {
@@ -82,7 +82,7 @@ export const MicrocosmRight = styled.div`
   }
   h3 {
     font-size: 48px;
-    line-height: 48px;
+    line-height: 50px;
     font-weight: 400;
     text-transform: uppercase;
     padding-top: 25px;
@@ -117,6 +117,7 @@ export const ActionGroup = styled.div`
   align-items: center;
   padding-top: 25px;
   a {
+    border: 1px solid #5a5b44;
     border-radius: 50%;
     background-color: #5a5b44;
     width: 30px;
@@ -124,12 +125,20 @@ export const ActionGroup = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: #ffefd1;
+      svg {
+        color: #5a5b44;
+      }
+    }
+    transition: all 0.5s ease;
+    svg {
+      color: #ffefd1;
+      width: 20px;
+      height: 20px;
+    }
   }
-  svg {
-    color: #ddccb2;
-    width: 20px;
-    height: 20px;
-  }
+
   @media screen and (max-width: 425px) {
     a {
       width: 25px;

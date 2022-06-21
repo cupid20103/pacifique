@@ -8,8 +8,6 @@ const Julien = () => {
   return (
     <FriendSection image={julien}>
       <b>{"Julien Vecchioli-Barduzzi | Partner - Hospitality, F&B"}</b>
-      <br />
-      <br />
       <p>
         {
           "Julien began his career with the Yannick Alleno group, during 7 years he traveled the world to open new restaurants of the Group and taking care of the existing ones."

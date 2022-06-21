@@ -22,7 +22,7 @@ export const IntroHeader = styled.div`
   h3 {
     font-weight: 400;
     font-size: 48px;
-    line-height: 49px;
+    line-height: 50px;
     width: 30%;
     text-transform: uppercase;
   }
@@ -30,7 +30,7 @@ export const IntroHeader = styled.div`
     font-family: "Forum";
     font-weight: 400;
     font-size: 20px;
-    line-height: 126.4%;
+    line-height: 22px;
     width: 30%;
     padding-left: 10%;
   }

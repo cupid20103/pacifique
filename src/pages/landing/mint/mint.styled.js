@@ -101,16 +101,16 @@ export const MintContent = styled.div`
   justify-content: center;
   align-items: center;
   h3 {
-    font-size: 40px;
+    font-size: 48px;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 50px;
     font-weight: 500;
     text-transform: uppercase;
   }
   b {
     font-size: 32px;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 34px;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -121,23 +121,22 @@ export const MintContent = styled.div`
     font-family: Forum;
     font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 20px;
   }
   li {
     font-family: Forum;
-    line-height: 16px;
+    line-height: 18px;
     text-align: left;
   }
-  @media screen and (max-width: 768px) {
-    text-align: center;
+  @media screen and (max-width: 1204px) {
     h3 {
-      font-size: 32px;
+      font-size: 40px;
     }
     b {
       font-size: 28px;
     }
     ul {
-      padding-top: 20px;
+      padding-top: 35px;
     }
     p {
       font-size: 16px;
@@ -146,12 +145,24 @@ export const MintContent = styled.div`
       font-size: 14px;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
+    text-align: center;
     h3 {
-      font-size: 24px;
+      font-size: 32px;
     }
     b {
       font-size: 24px;
+    }
+    ul {
+      padding-top: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    h3 {
+      font-size: 32px;
+    }
+    b {
+      font-size: 20px;
     }
     p {
       font-size: 14px;
@@ -164,11 +175,17 @@ export const MintContent = styled.div`
 
 export const ConnectWallet = styled(Link)`
   background-color: #5a5b44;
-  color: rgb(255, 237, 204);
+  color: #ffefd1;
   padding: 10px 30px;
+  border: 1px solid #5a5b44;
   border-radius: 10px;
   font-size: 32px;
   cursor: pointer;
+  &:hover {
+    background-color: #ffefd1;
+    color: #5a5b44;
+  }
+  transition: all 0.5s ease;
   @media screen and (max-width: 1024px) {
     padding: 10px 25px;
     font-size: 28px;

@@ -8,8 +8,6 @@ const Sabrina = () => {
   return (
     <FriendSection image={sabrina}>
       <b>{"Sabrina Trione | Co-Owner & Art Director"}</b>
-      <br />
-      <br />
       <p>
         {"Creative Human and fashion lover."}
         <br />

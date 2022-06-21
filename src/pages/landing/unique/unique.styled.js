@@ -79,13 +79,13 @@ export const UniqueContent = styled.div`
   h3 {
     font-size: 50px;
     font-weight: 400;
-    line-height: 51px;
+    line-height: 52px;
     text-transform: uppercase;
   }
   b {
     font-size: 20px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 22px;
     text-transform: uppercase;
   }
   p {

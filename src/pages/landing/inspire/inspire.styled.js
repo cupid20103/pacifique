@@ -14,7 +14,7 @@ export const InspireContainer = styled.div`
     font-size: 48px;
     color: #ffefd1;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 50px;
     font-weight: 500;
   }
   @media screen and (max-width: 1024px) {
@@ -44,7 +44,7 @@ export const InspireContent = styled.div`
     font-size: 20px;
     color: #ffefd1;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 22px;
     text-transform: uppercase;
     text-align: center;
   }

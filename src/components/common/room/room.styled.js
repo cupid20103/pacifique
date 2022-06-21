@@ -43,7 +43,7 @@ export const RoomText = styled.div`
   b {
     font-weight: 400;
     font-size: 18px;
-    line-height: 19px;
+    line-height: 20px;
   }
   P {
     font-family: Forum;

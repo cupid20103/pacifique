@@ -8,8 +8,6 @@ const Daniel = () => {
   return (
     <FriendSection image={daniel}>
       <b>{"Daniel Mkongo | Founder & Creative Director"}</b>
-      <br />
-      <br />
       <p>
         {
           "Attached to his family and roots, Daniel has a past full of experiences, he’s very passionate and enthusiastic."

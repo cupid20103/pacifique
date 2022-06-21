@@ -26,14 +26,14 @@ export const MemberContent = styled.div`
   h3 {
     width: 65%;
     font-size: 48px;
-    line-height: 49px;
+    line-height: 50px;
     font-weight: 400;
     text-transform: uppercase;
   }
   p {
     font-family: Forum;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 18px;
   }
   @media screen and (max-width: 1024px) {
     width: 65%;
