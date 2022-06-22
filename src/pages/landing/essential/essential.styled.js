@@ -10,15 +10,20 @@ export const EssentialContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
   }
 `;
 
 export const EssentialLeft = styled.div`
-  width: 55%;
+  width: 50%;
   height: 100%;
-  padding: 50px;
+  padding: 25px;
   @media screen and (max-width: 768px) {
     width: 75%;
     padding: 30px;
@@ -55,25 +60,17 @@ export const FooterImage = styled.img`
 `;
 
 export const EssentialRight = styled.div`
-  width: 45%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 50px;
   h3 {
     font-size: 48px;
     font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
-    width: 50%;
-  }
-  b {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    padding-bottom: 15px;
   }
   p {
     font-family: Forum;
@@ -82,7 +79,6 @@ export const EssentialRight = styled.div`
     line-height: 18px;
   }
   @media screen and (max-width: 1024px) {
-    padding: 0 30px;
     h3 {
       font-size: 40px;
     }
@@ -92,8 +88,8 @@ export const EssentialRight = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    padding-bottom: 25px;
     align-items: center;
     text-align: center;
     h3 {
@@ -101,7 +97,6 @@ export const EssentialRight = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 15px;
     h3 {
       font-size: 24px;
     }

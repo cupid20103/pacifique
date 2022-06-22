@@ -57,6 +57,7 @@ export const NatureContent = styled.div`
     padding: 100px 0;
     h3 {
       font-size: 32px;
+      line-height: 1.2;
     }
     p {
       width: 100%;
@@ -67,7 +68,6 @@ export const NatureContent = styled.div`
     padding: 50px 0;
     h3 {
       font-size: 24px;
-      line-height: 1.2;
     }
     p {
       font-size: 16px;

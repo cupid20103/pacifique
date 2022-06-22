@@ -66,6 +66,7 @@ export const IntroContent = styled.div`
     text-align: center;
     h3 {
       font-size: 32px;
+      line-height: 1.2;
     }
     b {
       font-size: 16px;

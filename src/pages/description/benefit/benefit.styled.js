@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BuyContainer = styled.div`
+export const BenefitContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -12,14 +12,11 @@ export const BuyContainer = styled.div`
   }
 `;
 
-export const BuyLeft = styled.div`
+export const BenefitLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  a {
-    text-decoration: underline !important;
-  }
   @media screen and (max-width: 768px) {
     width: 90%;
   }
@@ -29,7 +26,7 @@ export const BuyLeft = styled.div`
   }
 `;
 
-export const BuyRight = styled.div`
+export const BenefitRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;

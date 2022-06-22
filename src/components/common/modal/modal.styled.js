@@ -66,6 +66,7 @@ export const ModalHeader = styled.div`
     top: 10px;
     right: 10px;
     transition: all 0.5s ease;
+    cursor: pointer;
     &:hover {
       color: #000;
     }

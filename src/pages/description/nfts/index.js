@@ -22,7 +22,11 @@ const Value = () => {
           <li>
             <p>
               {
-                "Only 1’111 memberships available, which fits the NFT model of scarcity perfectly. Each NFT is hand drawn by Sabrina Trione, giving them a significant and emotional artistic value. Every piece of art is unique, born by a melting pot of the artist feelings and emotions, and our roots, our vision and beliefs. Not just a membership card, but something that will last forever. A real ‘’Oeuvre d’Art’’."
+                "Only 1’111 memberships available, which fits the NFT model of scarcity perfectly. Each NFT is hand drawn by"
+              }
+              <b>{" Sabrina Trione"}</b>
+              {
+                ", giving them a significant and emotional artistic value. Every piece of art is unique, born by a melting pot of the artist feelings and emotions, and our roots, our vision and beliefs. Not just a membership card, but something that will last forever. A real ‘’Oeuvre d’Art’’."
               }
             </p>
           </li>

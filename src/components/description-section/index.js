@@ -1,20 +1,30 @@
 import React from "react";
+// @import resources
+import orange from "../../assets/images/orange.svg";
 // @import styles
 import {
   DescriptionContainer,
   DescriptionContent,
-  DescriptionWrapper,
+  DescriptionLine,
 } from "./description.styled";
 
 const Description = (props) => {
   return (
-    <DescriptionWrapper>
-      <DescriptionContainer>
+    <DescriptionContainer>
+      <DescriptionContent>
         <h3>{props.title}</h3>
-        <DescriptionContent>{props.children}</DescriptionContent>
-        {props.img && <img src={props.img} alt="description-background" />}
-      </DescriptionContainer>
-    </DescriptionWrapper>
+        {props.children}
+      </DescriptionContent>
+      <DescriptionLine />
+      {props.img && (
+        <img
+          src={props.img}
+          className={"back"}
+          alt={"description-background"}
+        />
+      )}
+      <img src={orange} className={"orange"} alt={"orange"} />
+    </DescriptionContainer>
   );
 };
 

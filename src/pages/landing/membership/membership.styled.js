@@ -20,6 +20,10 @@ export const MemberContainer = styled.div`
 
 export const MemberContent = styled.div`
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   h3 {
     font-size: 48px;
     line-height: 50px;
@@ -47,10 +51,10 @@ export const MemberContent = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
+    align-items: center;
     padding-bottom: 50px;
     text-align: center;
     h3 {
-      width: 100%;
       font-size: 32px;
       line-height: 1.2;
     }

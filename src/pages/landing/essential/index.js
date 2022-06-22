@@ -62,8 +62,11 @@ const Essential = () => {
           data-aos-duration={"1500"}
           className="aos-init aos-animate"
         >
-          <b>{"Get back to"}</b>
-          <h3>{"ESSENTIAL"}</h3>
+          <h3>
+            {"Get back to"}
+            <br />
+            {"ESSENTIAL"}
+          </h3>
           <p>
             {
               "Connect with Humans from all around the world and give birth to unforgettable memories. Discover new cultures, new dimensions and feel new emotions and energies."
