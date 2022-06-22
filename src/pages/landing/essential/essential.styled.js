@@ -23,10 +23,10 @@ export const EssentialContainer = styled.div`
 export const EssentialLeft = styled.div`
   width: 50%;
   height: 100%;
-  padding: 25px;
+  padding: 25px 50px 25px 0;
   @media screen and (max-width: 768px) {
-    width: 75%;
-    padding: 30px;
+    padding: 0;
+    width: 100%;
   }
 `;
 
@@ -36,14 +36,18 @@ export const EssentialContent = styled.div`
 `;
 
 export const SwiperContainer = styled(Swiper)`
+  width: 100%;
   height: 100%;
+  @media screen and (max-width: 1024px) {
+    padding: 0 25px;
+  }
 `;
 
 export const EssentialSlider = styled(Link)`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   p {
     text-align: center;
@@ -52,6 +56,7 @@ export const EssentialSlider = styled(Link)`
 
 export const HeaderImage = styled.img`
   width: 100%;
+  border-radius: 15px;
 `;
 
 export const FooterImage = styled.img`

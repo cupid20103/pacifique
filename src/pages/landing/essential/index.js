@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Pagination } from "swiper";
+import React from "react";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 // @import components
@@ -7,7 +7,6 @@ import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
 // @import resources
 import { data } from "./data";
-import { isScreenWidth } from "../../../utils/isScreenWidth";
 // @import styles
 import {
   EssentialContainer,
@@ -22,15 +21,6 @@ import {
 import { SwiperSlide } from "swiper/react";
 
 const Essential = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsMobile(isScreenWidth(425));
-    });
-    setIsMobile(isScreenWidth(425));
-  }, []);
-
   return (
     <Section id={"boutique"}>
       <EssentialContainer>
@@ -41,9 +31,27 @@ const Essential = () => {
             className="aos-init aos-animate"
           >
             <SwiperContainer
-              slidesPerView={isMobile ? 1 : 3}
+              slidesPerView={1}
               spaceBetween={30}
-              modules={[Pagination]}
+              breakpoints={{
+                1440: {
+                  slidesPerView: 3,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                425: {
+                  slidesPerView: 2,
+                },
+              }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Autoplay, Pagination]}
             >
               {data.map((item, index) => (
                 <SwiperSlide key={index}>

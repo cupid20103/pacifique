@@ -13,12 +13,12 @@ export const ActionContainer = styled(Link)`
   padding: 5px 20px;
   text-align: center;
   margin: 5px;
+  transition: all 0.5s ease;
   cursor: pointer;
   &:hover {
     color: ${(props) => props?.bgcolor};
     background-color: ${(props) => props?.fcolor};
   }
-  transition: all 0.5s ease;
   @media screen and (max-width: 1024px) {
     font-size: 16px;
     padding: 5px 15px;
@@ -43,12 +43,12 @@ export const ActionContainerScroll = styled(To)`
   padding: 5px 20px;
   text-align: center;
   margin: 5px;
+  transition: all 0.5s ease;
   cursor: pointer;
   &:hover {
     color: #5a5b44;
     background-color: #ffefd1;
   }
-  transition: all 0.5s ease;
   @media screen and (max-width: 1024px) {
     font-size: 16px;
     padding: 5px 15px;
