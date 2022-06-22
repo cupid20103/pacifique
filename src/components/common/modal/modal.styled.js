@@ -65,5 +65,9 @@ export const ModalHeader = styled.div`
     position: absolute;
     top: 10px;
     right: 10px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #000;
+    }
   }
 `;
