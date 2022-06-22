@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const RoomContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin: auto;
-  padding: 15px 15px;
+  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 2px solid #000;
   img {
     width: 100%;
     height: auto;
@@ -33,7 +33,7 @@ export const RoomText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  color: #000000;
+  color: #000;
   h3 {
     font-weight: 400;
     font-size: 32px;
@@ -52,10 +52,14 @@ export const RoomText = styled.div`
     line-height: 18px;
     word-break: break-all;
   }
+  @media screen and (max-width: 1200px) {
+    h3 {
+      min-height: 60px;
+    }
+  }
   @media screen and (max-width: 1024px) {
     h3 {
       font-size: 28px;
-      min-height: 60px;
     }
     b {
       font-size: 16px;

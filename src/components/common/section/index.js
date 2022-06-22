@@ -9,6 +9,7 @@ const Section = (props) => {
       color={props.color}
       paddingTop={props.paddingTop ? props.paddingTop : "75px"}
       image={props.image}
+      image2={props.image2}
       bgsize={props.bgsize ? props.bgsize : "100% 100%"}
       mbgsize={props.mbgsize ? props.mbgsize : "100% 100%"}
       bgpos={props.bgpos ? props.bgpos : "center"}

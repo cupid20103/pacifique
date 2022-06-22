@@ -12,22 +12,21 @@ const loader = keyframes`
   }
 `;
 
-const fontAnim = keyframes`
+const fontAnimation = keyframes`
   0% {
-    font-family: Forum;
+    content: "Welcome";
   }
   25% {
-    font-family: Maragsa;
-    color: #5a5b44;
+    content: "Bienvenue";
   }
-  35%{
-    color: #e74c3c;
-  }
-  60%{
-    color: #5a5b44;
+  50% {
+    content: "Benvenuti";
   }
   75% {
-    font-family: Forum;
+    content: "مَرْحَباً";
+  }
+  100%{
+    content: "Welcome";
   }
 `;
 
@@ -41,11 +40,14 @@ export const Overlay = styled.div`
   overflow: hidden;
   background-color: #ffefd1;
   z-index: 500;
-  animation: ${loader} 2s ease-in-out;
+  animation: ${loader} 4s ease-in-out;
   & > .welcome {
+    ::after {
+      content: "";
+      animation: ${fontAnimation} 3s;
+    }
     font-size: 24px;
     color: #5a5b44;
     font-family: Forum;
-    animation: ${fontAnim} 2s ease-in-out;
   }
 `;

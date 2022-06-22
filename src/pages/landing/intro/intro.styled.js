@@ -87,7 +87,6 @@ export const IntroContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #333;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }

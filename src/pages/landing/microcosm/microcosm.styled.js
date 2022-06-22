@@ -172,13 +172,10 @@ export const MicrocosmFooter = styled.div`
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  p {
-    letter-spacing: 1px;
-  }
+  font-family: Forum;
+  font-weight: 400;
   @media screen and (max-width: 768px) {
-    p {
-      font-size: 14px;
-    }
+    font-size: 14px;
   }
   @media screen and (max-width: 425px) {
     flex-direction: column;

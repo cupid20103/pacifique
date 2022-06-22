@@ -87,19 +87,19 @@ export const VisionContent = styled.div`
 
 export const VisionImages = styled.div`
   img {
-    width: 250px;
+    width: 350px;
     height: auto;
   }
   @media screen and (max-width: 1024px) {
     img {
-      width: 200px;
+      width: 300px;
       height: auto;
     }
   }
   @media screen and (max-width: 768px) {
     padding: 50px 0;
     img {
-      width: 200px;
+      width: 250px;
       height: auto;
     }
   }
