@@ -27,6 +27,8 @@ const Friend = () => {
               title={item.title}
               role={item.role}
               intro={item.intro}
+              career={item.career}
+              join={item.join}
               twitter={item.twitter}
               instagram={item.instagram}
               linkedin={item.linkedin}

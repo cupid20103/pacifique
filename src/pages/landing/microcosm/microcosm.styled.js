@@ -14,6 +14,9 @@ export const MicrocosmContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 0 50px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
+  }
 `;
 
 export const MicrocosmContent = styled.div`
@@ -152,10 +155,10 @@ export const ActionGroup = styled.div`
       width: 25px;
       height: 25px;
       margin: 3px;
-    }
-    svg {
-      width: 10px;
-      height: 10px;
+      svg {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 `;

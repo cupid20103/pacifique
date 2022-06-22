@@ -13,7 +13,12 @@ import {
 
 const MemberShip = () => {
   return (
-    <Section image={membershipBG} bgsize={"50% 100%"} bgpos={"right"}>
+    <Section
+      image={membershipBG}
+      bgsize={"50% 100%"}
+      bgpos={"right"}
+      mbgsize={"75% 75%"}
+    >
       <MemberContainer>
         <MemberContent
           data-aos="fade-up"

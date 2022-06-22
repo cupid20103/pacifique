@@ -22,10 +22,6 @@ const Healing = React.lazy(() => import("./pages/essential/healing"));
 const Boutique = React.lazy(() => import("./pages/essential/boutique"));
 const Music = React.lazy(() => import("./pages/essential/music"));
 const Adventures = React.lazy(() => import("./pages/essential/adventures"));
-const Sabrina = React.lazy(() => import("./pages/friend/sabrina"));
-const Daniel = React.lazy(() => import("./pages/friend/daniel"));
-const Julien = React.lazy(() => import("./pages/friend/julien"));
-const Alexandre = React.lazy(() => import("./pages/friend/alexandre"));
 
 const App = () => {
   const [provider, setProvider] = useState(null);
@@ -95,10 +91,6 @@ const App = () => {
               <Route path="/buy" element={<Buy />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/mint" element={<Mint />} />
-              <Route path="/sabrina" element={<Sabrina />} />
-              <Route path="/daniel" element={<Daniel />} />
-              <Route path="/julien" element={<Julien />} />
-              <Route path="/alexandre" element={<Alexandre />} />
             </Routes>
           </Router>
         </Suspense>

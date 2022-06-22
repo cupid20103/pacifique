@@ -8,23 +8,21 @@ export const HospitalContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
   }
 `;
 
 export const HospitalLeft = styled.div`
   width: 50%;
   height: 100%;
-  padding: 50px 100px;
-  @media screen and (max-width: 1024px) {
-    padding: 50px 50px;
-  }
   @media screen and (max-width: 768px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 425px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -42,6 +40,7 @@ export const HospitalContent = styled.div`
     text-transform: uppercase;
   }
   p {
+    width: 75%;
     font-family: Forum;
     padding: 25px 0;
     font-weight: 400;
@@ -64,6 +63,9 @@ export const HospitalContent = styled.div`
       font-size: 32px;
       line-height: 1.2;
     }
+    p {
+      width: 100%;
+    }
   }
   @media screen and (max-width: 425px) {
     padding-bottom: 15px;
@@ -78,7 +80,7 @@ export const HospitalContent = styled.div`
 
 export const HospitalRight = styled.div`
   width: 50%;
-  height: 90%;
+  height: 85%;
   max-width: 1000px;
   padding: 0 50px;
   display: flex;
@@ -86,12 +88,12 @@ export const HospitalRight = styled.div`
   align-items: center;
   @media screen and (max-width: 768px) {
     width: 80%;
-    height: 525px;
+    height: 500px;
     padding: 30px 0 30px 0;
   }
   @media screen and (max-width: 425px) {
-    height: 350px;
     width: 100%;
+    height: 300px;
     padding: 15px;
   }
 `;

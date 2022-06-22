@@ -11,8 +11,10 @@ export const MemberContainer = styled.div`
   align-items: center;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    background-size: 100% 75%;
     padding: 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
   }
 `;
 

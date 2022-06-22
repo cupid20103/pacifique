@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 // @import components
-import Action from "../action";
+import Modal from "../modal";
 // @import styles
 import {
+  TeamAction,
   TeamAvatar,
   TeamContainer,
   TeamContent,
@@ -11,6 +12,8 @@ import {
 } from "./team.styled";
 
 const Team = (props) => {
+  const [show, setShow] = useState(false);
+
   return (
     <TeamContainer
       data-aos="flip-down"
@@ -24,7 +27,16 @@ const Team = (props) => {
           <br />
           {props.role}
         </p>
-        <Action content={"Read More"} link={props.intro} />
+        <TeamAction onClick={() => setShow(true)}>{"Read More"}</TeamAction>
+        <Modal
+          show={show}
+          title={props.title}
+          role={props.role}
+          intro={props.intro}
+          career={props.career}
+          join={props.join}
+          onClose={() => setShow(false)}
+        />
         <TeamInfo>
           <a href={props.twitter} target={"_blank"} rel="noreferrer">
             <FaTwitter />

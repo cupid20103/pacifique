@@ -38,9 +38,42 @@ export const TeamContent = styled.div`
       text-align: center;
       font-size: 12px;
     }
+    @media screen and (max-width: 768px) {
+      min-height: 35px;
+    }
   }
   @media screen and (max-width: 768px) {
     align-items: center;
+  }
+`;
+
+export const TeamAction = styled.div`
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #5a5b44;
+  background-color: #ffefd1;
+  border: 1px solid #5a5b44;
+  padding: 5px 20px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+  &:hover {
+    color: #ffefd1;
+    background-color: #5a5b44;
+  }
+  transition: all 0.5s ease;
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
+    padding: 5px 10px;
   }
 `;
 

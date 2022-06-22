@@ -8,20 +8,23 @@ export const RoadmapContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 50px 0 100px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0px;
+    padding: 0px 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
   }
 `;
 
 export const RoadmapLeft = styled.div`
   width: 50%;
-  padding: 0 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-align: left;
   h3 {
     font-size: 48px;
     font-weight: 400;
@@ -35,26 +38,26 @@ export const RoadmapLeft = styled.div`
     font-weight: 400;
     line-height: 18px;
     color: #ffefd1;
-    width: 55%;
+    width: 60%;
   }
   img {
     width: 50%;
     height: auto;
   }
   @media screen and (max-width: 1024px) {
-    padding: 0 50px;
     h3 {
       font-size: 40px;
     }
     p {
       padding: 10px 0;
       font-size: 14px;
-      width: 65%;
+      width: 80%;
     }
   }
   @media screen and (max-width: 768px) {
     width: 100%;
     padding-bottom: 30px;
+    justify-content: center;
     text-align: center;
     h3 {
       font-size: 32px;
@@ -64,6 +67,7 @@ export const RoadmapLeft = styled.div`
     }
     img {
       padding: 30px 0;
+      width: 35%;
     }
   }
   @media screen and (max-width: 425px) {
@@ -112,9 +116,5 @@ export const RoadmapRight = styled.div`
     p {
       font-size: 12px;
     }
-    /* img {
-      width: 120%;
-      height: auto;
-    } */
   }
 `;

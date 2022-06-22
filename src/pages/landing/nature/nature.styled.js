@@ -9,10 +9,10 @@ export const NatureContainer = styled.div`
   max-width: 1440px;
   margin: auto;
   @media screen and (max-width: 768px) {
-    padding: 0 75px;
+    padding: 0 50px;
   }
   @media screen and (max-width: 425px) {
-    padding: 0 50px;
+    padding: 0 25px;
   }
 `;
 

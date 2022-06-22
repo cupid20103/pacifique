@@ -31,6 +31,7 @@ export const InspireContainer = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
+    padding: 0 25px 50px;
     h3 {
       font-size: 24px;
     }

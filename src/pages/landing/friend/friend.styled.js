@@ -14,6 +14,9 @@ export const FriendContainer = styled.div`
     flex-direction: column;
     padding: 0 50px 50px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px 50px;
+  }
 `;
 
 export const FriendTitle = styled.div`
@@ -67,9 +70,10 @@ export const FrinedContent = styled.div`
   @media screen and (max-width: 768px) {
     width: 90%;
     grid-template-columns: auto auto;
-    gap: 50px;
+    gap: 35px;
   }
   @media screen and (max-width: 425px) {
+    width: 80%;
     grid-template-columns: auto;
   }
 `;

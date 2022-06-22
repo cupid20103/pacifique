@@ -23,7 +23,7 @@ import {
 
 const Hospital = () => {
   return (
-    <Section>
+    <Section height={"80vh"}>
       <HospitalContainer>
         <HospitalLeft>
           <HospitalContent
@@ -31,13 +31,17 @@ const Hospital = () => {
             data-aos-duration={"1500"}
             className="aos-init aos-animate"
           >
-            <h3>{"Hospitality Experiences"}</h3>
+            <h3>
+              {"Hospitality"}
+              <br />
+              {"Experiences"}
+            </h3>
             <p>
               {
                 "Ideal for like-minded creative thinkers, artists, athletes, entrepreneurs, designers, NFT passionates, foodies and adventurers, looking for an authentic and stimulating experience, well-being and inspiration, amusement and unique encounters. For the lovers of life in general."
               }
             </p>
-            <Action link={"#"} content={"Coming Soon"} />
+            <Action link={"#"} content={"Read More"} />
           </HospitalContent>
         </HospitalLeft>
         <HospitalRight
@@ -47,7 +51,7 @@ const Hospital = () => {
         >
           <HospitalGallery1>
             <HospitalWindow pic={window} alt={"window"} />
-            <HospitalGirl pic={drink} alt={"girl"} />
+            <HospitalGirl pic={girl} alt={"girl"} />
           </HospitalGallery1>
           <HospitalGallery2>
             <HospitalDrink pic={drink} alt={"drink"} />

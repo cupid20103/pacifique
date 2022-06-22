@@ -13,6 +13,9 @@ export const FAQContainer = styled.div`
     flex-direction: column;
     padding: 0 50px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
+  }
 `;
 
 export const FAQLeft = styled.div`

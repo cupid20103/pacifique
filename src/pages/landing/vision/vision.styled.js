@@ -13,6 +13,9 @@ export const VisionContainer = styled.div`
     flex-direction: column;
     padding: 0 50px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
+  }
 `;
 
 export const VisionLeft = styled.div`
@@ -49,12 +52,13 @@ export const VisionLeft = styled.div`
 `;
 
 export const VisionContent = styled.div`
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   p {
+    width: 75%;
     font-family: Forum;
     padding: 25px 0;
     font-weight: 400;
@@ -67,10 +71,10 @@ export const VisionContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    width: 100%;
     align-items: center;
     text-align: center;
     p {
+      width: 100%;
       padding: 0;
     }
   }

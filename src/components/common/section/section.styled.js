@@ -11,5 +11,6 @@ export const SectionContainer = styled.section`
   background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     height: fit-content;
+    background-size: ${(props) => props.mbgsize};
   }
 `;
