@@ -43,7 +43,7 @@ export const Overlay = styled.div`
   animation: ${loader} 4s ease-in-out;
   & > .welcome {
     ::after {
-      content: "";
+      content: "Welcome";
       animation: ${fontAnimation} 3s;
     }
     font-size: 24px;
