@@ -11,11 +11,11 @@ export const RoadmapContainer = styled.div`
   align-items: center;
   padding: 0 0 0 150px;
   @media screen and (max-width: 1024px) {
-    padding: 0px 100px;
+    padding: 0 0 0 100px;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
   @media screen and (max-width: 425px) {
     padding: 0 25px;
@@ -137,17 +137,17 @@ export const RoadmapRightContent = styled.div`
       font-size: 14px;
     }
   }
+  @media screen and (max-width: 1024px) {
+    b,
+    p {
+      font-size: 12px;
+    }
+  }
   @media screen and (max-width: 768px) {
     height: auto;
     top: auto;
     position: auto;
     justify-content: center;
-  }
-  @media screen and (max-width: 425px) {
-    b,
-    p {
-      font-size: 12px;
-    }
   }
 `;
 
@@ -196,13 +196,13 @@ export const RoadmapSteps = styled.div`
   @media screen and (max-width: 1240px) {
     width: 95%;
     :after {
-      height: 95%;
+      height: calc(7.5% * ${(props) => props.nav});
     }
   }
   @media screen and (max-width: 1024px) {
     width: 100%;
     :after {
-      height: auto;
+      height: calc(8% * ${(props) => props.nav});
     }
     & :nth-child(12) {
       top: -130px;
@@ -210,6 +210,9 @@ export const RoadmapSteps = styled.div`
   }
   @media screen and (max-width: 768px) {
     height: auto;
+    :after {
+      height: auto;
+    }
     & :not(:first-child) {
       top: 0px;
     }
