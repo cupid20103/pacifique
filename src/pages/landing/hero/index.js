@@ -1,6 +1,6 @@
 import React from "react";
 // @import resources
-import poster from "../../../assets/images/poster.svg";
+import poster from "../../../assets/images/poster.png";
 // @import styles
 import {
   HeroContainer,

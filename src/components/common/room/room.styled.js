@@ -7,7 +7,8 @@ export const RoomContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 25px 10px;
+  padding: 25px 0;
+  margin: 0 10px;
   border-bottom: 2px solid #000;
   img {
     width: 100%;

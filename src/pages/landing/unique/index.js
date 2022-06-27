@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../../../components/common/section";
 // @import resources
-import hand from "../../../assets/images/hand.svg";
+import hand from "../../../assets/images/hand.png";
 import num from "../../../assets/images/1111.svg";
 import unique from "../../../assets/images/unique.png";
 // @import styles

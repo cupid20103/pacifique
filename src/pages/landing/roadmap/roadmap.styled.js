@@ -42,6 +42,7 @@ export const RoadmapLeftContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 50px;
   text-align: left;
   h3 {
     font-size: 48px;
@@ -62,7 +63,6 @@ export const RoadmapLeftContent = styled.div`
   }
   @media screen and (max-width: 1440px) {
     height: 100vh;
-    margin-top: 50px;
     top: 75px;
   }
   @media screen and (max-width: 1024px) {
@@ -123,6 +123,7 @@ export const RoadmapRightContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 50px;
   color: #ffefd1;
   p {
     font-family: Forum;
@@ -130,7 +131,6 @@ export const RoadmapRightContent = styled.div`
   }
   @media screen and (max-width: 1440px) {
     height: 100vh;
-    margin-top: 50px;
     top: 75px;
     b,
     p {

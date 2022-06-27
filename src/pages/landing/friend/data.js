@@ -1,7 +1,7 @@
-import sabrina from "../../../assets/images/sabrina.svg";
-import daniel from "../../../assets/images/daniel.svg";
-import julien from "../../../assets/images/julien.svg";
-import alexandre from "../../../assets/images/alexandre.svg";
+import sabrina from "../../../assets/images/sabrina.png";
+import daniel from "../../../assets/images/daniel.png";
+import julien from "../../../assets/images/julien.png";
+import alexandre from "../../../assets/images/alexandre.png";
 
 export const data = [
   {

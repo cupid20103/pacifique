@@ -22,6 +22,10 @@ const Roadmap = () => {
   const [nav, setNav] = useState(0.0);
   const [isMobile, setIsMobile] = useState(false);
 
+  const setMobile = () => {
+    setIsMobile(isScreenWidth(768));
+  };
+
   const changeNav = () => {
     const top = myRef.current.getBoundingClientRect().top;
     const bottom = myRef.current.getBoundingClientRect().bottom;
@@ -32,21 +36,16 @@ const Roadmap = () => {
     }
   };
 
-  const setMobile = () => {
-    setIsMobile(isScreenWidth(768));
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-    return () => {
-      window.removeEventListener("scroll", changeNav);
-    };
-  }, []);
-
   useEffect(() => {
     window.addEventListener("resize", setMobile);
+    window.addEventListener("scroll", changeNav);
     setMobile();
-    return () => window.removeEventListener("resize", setMobile);
+    changeNav();
+    return () => {
+      window.removeEventListener("resize", setMobile);
+      window.removeEventListener("scroll", changeNav);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

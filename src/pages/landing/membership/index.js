@@ -3,7 +3,7 @@ import React from "react";
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
 // @import resources
-import membershipBG from "../../../assets/images/membership_bg.svg";
+import membershipBG from "../../../assets/images/membership_bg.png";
 // @import styles
 import {
   MemberActions,
