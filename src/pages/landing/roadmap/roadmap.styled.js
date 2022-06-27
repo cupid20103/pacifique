@@ -8,7 +8,10 @@ export const RoadmapContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0px 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0px 50px;
@@ -22,6 +25,10 @@ export const RoadmapLeft = styled.div`
   width: ${(props) => (props.isMobile ? "100%" : "40%")};
   height: 100%;
   position: relative;
+  padding-left: 50px;
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
 `;
 
 export const RoadmapLeftContent = styled.div`
@@ -32,26 +39,24 @@ export const RoadmapLeftContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
     color: #ffefd1;
   }
   p {
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
     line-height: 18px;
     color: #ffefd1;
     width: 60%;
   }
   img {
-    width: 40%;
+    width: 200px;
     height: auto;
+    padding-top: 75px;
   }
   @media screen and (max-width: 1024px) {
     h3 {
@@ -64,7 +69,7 @@ export const RoadmapLeftContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    padding-bottom: 30px;
+    align-items: center;
     text-align: center;
     h3 {
       font-size: 32px;
@@ -92,6 +97,10 @@ export const RoadmapRight = styled.div`
   width: ${(props) => (props.isMobile ? "100%" : "60%")};
   height: 100%;
   position: relative;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const RoadmapRightContent = styled.div`
@@ -99,13 +108,11 @@ export const RoadmapRightContent = styled.div`
   height: ${(props) => (props.isMobile ? "auto" : "calc(100vh - 75px)")};
   top: ${(props) => (props.isMobile ? "auto" : "75px")};
   position: ${(props) => (props.isMobile ? "auto" : "sticky")};
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: #ffefd1;
-  font-weight: 400;
   p {
     font-family: Forum;
     font-size: 16px;
@@ -115,9 +122,6 @@ export const RoadmapRightContent = styled.div`
     p {
       font-size: 14px;
     }
-  }
-  @media screen and (max-width: 768px) {
-    padding-bottom: 50px;
   }
   @media screen and (max-width: 425px) {
     b,

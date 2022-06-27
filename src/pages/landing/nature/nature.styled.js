@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const NatureContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 100px;
   max-width: 1440px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     padding: 0 50px;
   }
@@ -22,28 +26,34 @@ export const NatureGroup = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const NatureContent = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
+  padding-top: 50px;
   text-align: right;
   color: #ffefd1;
   h3 {
     font-size: 48px;
-    line-height: 50px;
-    font-weight: 400;
+    line-height: 48px;
   }
   p {
-    width: 60%;
     font-family: "Forum";
     font-size: 22px;
-    font-weight: 400;
     line-height: 24px;
+    margin: 0;
+    padding-bottom: 25px;
   }
   @media screen and (max-width: 1024px) {
+    padding-top: 100px;
     h3 {
       font-size: 40px;
     }
@@ -52,20 +62,19 @@ export const NatureContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
     h3 {
       font-size: 32px;
       line-height: 1.2;
     }
     p {
-      width: 100%;
       font-size: 18px;
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 50px 0;
     h3 {
       font-size: 24px;
     }

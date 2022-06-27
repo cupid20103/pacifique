@@ -13,6 +13,7 @@ import {
   HeaderContainer,
   HeaderMenu,
   HeaderTitle,
+  HeaderWrapper,
   MenuActions,
   MenuContactActions,
   MenuImage,
@@ -57,68 +58,75 @@ const LandingHeader = () => {
   };
 
   return (
-    <HeaderContainer>
-      <HeaderColor isOpened={isOpened} nav={nav} />
-      <HeaderTitle to={"hero"} smooth={true} duration={1500}>
-        {"Pacifique AV"}
-      </HeaderTitle>
-      {!isOpened ? (
-        <HeaderAction onClick={handleMenuToggle}>
-          <HeaderCircle />
-          <p>{"Menu"}</p>
-        </HeaderAction>
-      ) : (
-        <HeaderClose onClick={handleMenuToggle}>
-          <FaTimes />
-          {"Close"}
-        </HeaderClose>
-      )}
-      <HeaderMenu isOpened={isOpened}>
-        <MenuActions>
-          <MenuPageActions id="menu-page">
-            <Link
-              to={"faq"}
-              smooth={true}
-              duration={1500}
-              onClick={handleMenuToggle}
-            >
-              {"FAQ"}
-            </Link>
-            <Link
-              to={"places"}
-              smooth={true}
-              duration={1500}
-              onClick={handleMenuToggle}
-            >
-              {"Places"}
-            </Link>
-            <a
-              href={"https://pacifiqueav.medium.com/"}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              {"JOURNAL"}
-            </a>
-            <Link
-              to={"boutique"}
-              smooth={true}
-              duration={1500}
-              onClick={handleMenuToggle}
-            >
-              {"Boutique"}
-            </Link>
-          </MenuPageActions>
-          <MenuContactActions id="menu-contact">
-            {contacts.map((item, index) => (
-              <a key={index} href={item.to} target={"_blank"} rel="noreferrer">
-                {item.value}
+    <HeaderWrapper>
+      <HeaderContainer>
+        <HeaderColor isOpened={isOpened} nav={nav} />
+        <HeaderTitle to={"hero"} smooth={true} duration={1500}>
+          {"Pacifique AV"}
+        </HeaderTitle>
+        {!isOpened ? (
+          <HeaderAction onClick={handleMenuToggle}>
+            <HeaderCircle />
+            <p>{"Menu"}</p>
+          </HeaderAction>
+        ) : (
+          <HeaderClose onClick={handleMenuToggle}>
+            <FaTimes />
+            {"Close"}
+          </HeaderClose>
+        )}
+        <HeaderMenu isOpened={isOpened}>
+          <MenuActions>
+            <MenuPageActions id="menu-page">
+              <Link
+                to={"faq"}
+                smooth={true}
+                duration={1500}
+                onClick={handleMenuToggle}
+              >
+                {"FAQ"}
+              </Link>
+              <Link
+                to={"places"}
+                smooth={true}
+                duration={1500}
+                onClick={handleMenuToggle}
+              >
+                {"Places"}
+              </Link>
+              <a
+                href={"https://pacifiqueav.medium.com/"}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {"JOURNAL"}
               </a>
-            ))}
-          </MenuContactActions>
-        </MenuActions>
-        <MenuImage id="menu-img" src={city} alt={"city"} />
-      </HeaderMenu>
-    </HeaderContainer>
+              <Link
+                to={"boutique"}
+                smooth={true}
+                duration={1500}
+                onClick={handleMenuToggle}
+              >
+                {"Boutique"}
+              </Link>
+            </MenuPageActions>
+            <MenuContactActions id="menu-contact">
+              {contacts.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.to}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {item.value}
+                </a>
+              ))}
+            </MenuContactActions>
+          </MenuActions>
+          <MenuImage id="menu-img" src={city} alt={"city"} />
+        </HeaderMenu>
+      </HeaderContainer>
+    </HeaderWrapper>
   );
 };
 

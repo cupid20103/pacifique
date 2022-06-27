@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MicrocosmContainer = styled.div`
-  position: relative;
   width: 100%;
   height: 100%;
   max-width: 1440px;
@@ -10,7 +9,10 @@ export const MicrocosmContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     padding: 0 50px;
   }
@@ -23,7 +25,6 @@ export const MicrocosmContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -37,14 +38,12 @@ export const MicrocosmLeft = styled.div`
   align-items: flex-start;
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
   }
   p {
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
+    padding-bottom: 15px;
     line-height: 18px;
     width: 75%;
   }
@@ -54,6 +53,7 @@ export const MicrocosmLeft = styled.div`
       font-size: 40px;
     }
     p {
+      width: 100%;
       font-size: 14px;
     }
   }
@@ -61,12 +61,10 @@ export const MicrocosmLeft = styled.div`
     align-items: center;
     text-align: center;
     width: 100%;
+    padding-top: 50px;
     h3 {
       font-size: 32px;
       line-height: 1.2;
-    }
-    p {
-      width: 100%;
     }
   }
   @media screen and (max-width: 425px) {
@@ -93,7 +91,6 @@ export const MicrocosmRight = styled.div`
   h3 {
     font-size: 48px;
     line-height: 50px;
-    font-weight: 400;
     text-transform: uppercase;
     padding-top: 25px;
     width: 50%;
@@ -105,7 +102,7 @@ export const MicrocosmRight = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 80%;
-    padding: 30px 0;
+    padding: 50px 0;
     h3 {
       font-size: 32px;
       line-height: 1.2;
@@ -113,7 +110,6 @@ export const MicrocosmRight = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 15px 0;
     h3 {
       font-size: 24px;
     }
@@ -160,49 +156,5 @@ export const ActionGroup = styled.div`
         height: 15px;
       }
     }
-  }
-`;
-
-export const MicrocosmFooter = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  font-family: Forum;
-  font-weight: 400;
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 425px) {
-    flex-direction: column;
-    bottom: 10px;
-  }
-`;
-
-export const Actions = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  & > :first-child {
-    padding: 0 100px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-    & > * {
-      padding: 0 5px !important;
-    }
-  }
-`;
-
-export const ActionLink = styled.a`
-  padding: 0 10px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  &:hover {
-    color: #000;
   }
 `;

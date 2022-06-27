@@ -3,27 +3,19 @@ import React from "react";
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
 // @import resources
-import window from "../../../assets/images/window.svg";
-import girl from "../../../assets/images/girl.svg";
-import drink from "../../../assets/images/drink.svg";
-import bike from "../../../assets/images/bike.svg";
+import hospital from "../../../assets/images/hospital.svg";
 // @import styles
 import {
-  HospitalBike,
   HospitalContainer,
   HospitalContent,
-  HospitalDrink,
-  HospitalGallery1,
-  HospitalGallery2,
-  HospitalGirl,
+  HospitalImage,
   HospitalLeft,
   HospitalRight,
-  HospitalWindow,
 } from "./hospital.styled";
 
 const Hospital = () => {
   return (
-    <Section height={"80vh"}>
+    <Section height={"450px"}>
       <HospitalContainer>
         <HospitalLeft>
           <HospitalContent
@@ -41,7 +33,12 @@ const Hospital = () => {
                 "Ideal for like-minded creative thinkers, artists, athletes, entrepreneurs, designers, NFT passionates, foodies and adventurers, looking for an authentic and stimulating experience, well-being and inspiration, amusement and unique encounters. For the lovers of life in general."
               }
             </p>
-            <Action link={"#"} content={"Read More"} />
+            <Action
+              link={"boutique"}
+              content={"Read More"}
+              mode={"scroll"}
+              hospital
+            />
           </HospitalContent>
         </HospitalLeft>
         <HospitalRight
@@ -49,14 +46,7 @@ const Hospital = () => {
           data-aos-duration={"1500"}
           className="aos-init aos-animate"
         >
-          <HospitalGallery1>
-            <HospitalWindow pic={window} alt={"window"} />
-            <HospitalGirl pic={girl} alt={"girl"} />
-          </HospitalGallery1>
-          <HospitalGallery2>
-            <HospitalDrink pic={drink} alt={"drink"} />
-            <HospitalBike pic={bike} alt={"bike"} />
-          </HospitalGallery2>
+          <HospitalImage src={hospital} alt={"hospital"} />
         </HospitalRight>
       </HospitalContainer>
     </Section>

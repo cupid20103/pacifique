@@ -13,7 +13,7 @@ import {
 
 const Fondation = () => {
   return (
-    <Section color="#5A5B44" image={fondation}>
+    <Section color="#5A5B44" height={"600px"} image={fondation}>
       <FondationContainer>
         <FondationLeft
           data-aos="fade-up"

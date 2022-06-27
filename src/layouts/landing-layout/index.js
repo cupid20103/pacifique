@@ -1,6 +1,7 @@
 import React from "react";
 // @import components
 import LandingHeader from "./header";
+import LandingFooter from "./footer";
 // @import styles
 import { Overlay } from "./init.styeld";
 
@@ -12,6 +13,7 @@ const LandingLayout = (props) => {
       </Overlay>
       <LandingHeader />
       {props.children}
+      <LandingFooter />
     </>
   );
 };

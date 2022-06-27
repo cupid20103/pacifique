@@ -10,7 +10,7 @@ const Artisans = () => {
       image={artisans}
       title={"artisans"}
       subtitle={"Handmade by local"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <h3>{"BOUTIQUE"}</h3>

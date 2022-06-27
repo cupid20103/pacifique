@@ -15,7 +15,7 @@ import {
 
 const Intro = () => {
   return (
-    <Section id={"places"}>
+    <Section id={"places"} height={"700px"}>
       <IntroContainer>
         <IntroHeader>
           <h3
@@ -23,7 +23,9 @@ const Intro = () => {
             data-aos-duration={"1500"}
             className="aos-init aos-animate"
           >
-            {"Your little Heaven in earth"}
+            {"Your little"}
+            <br />
+            {"Heaven in earth"}
           </h3>
           <img
             src={symbol}
@@ -39,7 +41,9 @@ const Intro = () => {
           >
             {"Our vision is crystal clear."}
             <br />
-            {"This are some renderings we’ve made back in 2020."}
+            {"This are some renderings"}
+            <br />
+            {"we’ve made back in 2020."}
           </p>
         </IntroHeader>
         <IntroFooter>

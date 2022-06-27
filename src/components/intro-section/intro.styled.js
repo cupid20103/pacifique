@@ -6,48 +6,51 @@ export const IntroContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  background-color: #5a5b44;
+  padding: 75px 150px 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 75px 100px 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 75px 50px 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 75px 25px 0 25px;
   }
 `;
 
 export const IntroLeft = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100%;
-  padding: 25px;
-  background-color: #ddccb2;
+  color: #ffefd1;
   @media screen and (max-width: 768px) {
-    width: 80%;
-    padding: 30px;
+    width: 100%;
+    padding-top: 50px;
   }
 `;
 
 export const IntroContent = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
-  margin: auto;
-  border-bottom: 2px solid #333;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
   }
   b {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
     padding-bottom: 15px;
   }
   p {
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
     line-height: 18px;
+    width: 80%;
   }
   @media screen and (max-width: 1024px) {
     h3 {
@@ -71,6 +74,9 @@ export const IntroContent = styled.div`
     b {
       font-size: 16px;
     }
+    p {
+      width: 100%;
+    }
   }
   @media screen and (max-width: 425px) {
     h3 {
@@ -86,29 +92,28 @@ export const IntroContent = styled.div`
 `;
 
 export const IntroRight = styled.div`
-  width: 40%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ffefd1;
+  background-color: #5a5b44;
   text-align: center;
-  padding: 0 5px;
   img {
-    width: 55%;
+    width: 50%;
     height: auto;
   }
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
-    padding: 10px 0 15px 0;
+    padding: 15px 0 25px 0;
   }
   b {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
     padding-top: 15px;
   }
   @media screen and (max-width: 1024px) {
@@ -120,8 +125,8 @@ export const IntroRight = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    width: 80%;
-    padding: 30px;
+    width: 100%;
+    padding: 50px 0;
     h3 {
       font-size: 32px;
     }
@@ -130,7 +135,6 @@ export const IntroRight = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 15px;
     img {
       width: 75%;
     }

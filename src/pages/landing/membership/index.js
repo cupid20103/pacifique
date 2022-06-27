@@ -14,8 +14,9 @@ import {
 const MemberShip = () => {
   return (
     <Section
+      height={"750px"}
       image={membershipBG}
-      bgsize={"50% 100%"}
+      bgsize={"60% 90%"}
       bgpos={"right"}
       mbgsize={"75% 75%"}
     >
@@ -49,8 +50,6 @@ const MemberShip = () => {
             <br />
             <br />
             {"We plan on opening multiple locations around the world."}
-            <br />
-            {"The first one will be in 31°38′07″N 8°00′01″W"}
           </p>
           <MemberActions>
             <Action link={"/benefits"} content={"Membership Benefits"} />

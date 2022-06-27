@@ -53,7 +53,6 @@ export const HeroContent = styled.div`
   h2 {
     font-size: 64px;
     line-height: 65px;
-    font-weight: 400;
     text-transform: uppercase;
   }
   img {
@@ -84,7 +83,6 @@ export const HeroSubTitle = styled.div`
     padding: 0 10px;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
     text-transform: uppercase;
   }
   & > :not(:last-child) {

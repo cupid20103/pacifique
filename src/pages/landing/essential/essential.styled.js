@@ -10,7 +10,10 @@ export const EssentialContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
@@ -23,9 +26,11 @@ export const EssentialContainer = styled.div`
 export const EssentialLeft = styled.div`
   width: 50%;
   height: 100%;
-  padding: 25px 50px 25px 0;
+  padding: 50px;
   @media screen and (max-width: 768px) {
-    padding: 0;
+    width: 90%;
+  }
+  @media screen and (max-width: 425px) {
     width: 100%;
   }
 `;
@@ -38,9 +43,6 @@ export const EssentialContent = styled.div`
 export const SwiperContainer = styled(Swiper)`
   width: 100%;
   height: 100%;
-  @media screen and (max-width: 1024px) {
-    padding: 0 25px;
-  }
 `;
 
 export const EssentialSlider = styled(Link)`
@@ -73,28 +75,27 @@ export const EssentialRight = styled.div`
   align-items: flex-start;
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
   }
   p {
+    width: 85%;
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
     line-height: 18px;
+    padding-bottom: 15px;
   }
   @media screen and (max-width: 1024px) {
     h3 {
       font-size: 40px;
     }
     p {
-      padding: 10px 0;
+      width: 100%;
       font-size: 14px;
     }
   }
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     align-items: center;
     text-align: center;
     h3 {

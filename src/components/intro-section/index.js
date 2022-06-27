@@ -15,7 +15,7 @@ import {
 const IntroSection = (props) => {
   return (
     <AppLayout>
-      <Section>
+      <Section height={"100vh"}>
         <IntroContainer>
           <IntroLeft>
             <IntroContent
@@ -34,7 +34,7 @@ const IntroSection = (props) => {
             <img src={props.image} alt={"introduce"} />
             <b>{props.subtitle}</b>
             <h3>{props.title}</h3>
-            <Action link={props.link} content={props.action} />
+            <Action link={props.link} content={props.action} micro faq />
           </IntroRight>
         </IntroContainer>
       </Section>

@@ -5,11 +5,11 @@ export const InspireContainer = styled.div`
   height: 100%;
   max-width: 1440px;
   margin: auto;
-  padding: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 50px 150px;
   text-align: center;
   h3 {
     font-size: 48px;
@@ -19,19 +19,21 @@ export const InspireContainer = styled.div`
     font-weight: 500;
   }
   @media screen and (max-width: 1024px) {
+    padding: 50px 100px;
     h3 {
       font-size: 40px;
       line-height: 1.2;
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 0 50px 50px;
+    justify-content: center;
+    padding: 50px;
     h3 {
       font-size: 32px;
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 0 25px 50px;
+    padding: 50px 25px;
     h3 {
       font-size: 24px;
     }
@@ -41,9 +43,8 @@ export const InspireContainer = styled.div`
 export const InspireContent = styled.p`
   color: #ffefd1;
   font-size: 20px;
-  font-weight: 400;
   letter-spacing: 2px;
-  line-height: 1.5;
+  line-height: 2;
   text-transform: uppercase;
   text-align: center;
   @media screen and (max-width: 1024px) {

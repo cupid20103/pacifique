@@ -1,14 +1,31 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-export const HeaderContainer = styled.div`
+export const HeaderWrapper = styled.div`
   width: 100%;
   height: 75px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   z-index: 200;
+`;
+
+export const HeaderContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
+  }
 `;
 
 export const HeaderColor = styled.div`
@@ -17,7 +34,7 @@ export const HeaderColor = styled.div`
   left: 0;
   width: 100%;
   height: ${(props) => (props.isOpened || props.nav ? "100%" : "0")};
-  background: #ffefd1;
+  background: #5a5b44;
   transition: 2s ease;
   z-index: -50;
 `;
@@ -26,6 +43,7 @@ export const HeaderAction = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffefd1;
   cursor: pointer;
   p {
     visibility: hidden;
@@ -45,7 +63,7 @@ export const HeaderAction = styled.div`
 export const HeaderCircle = styled.div`
   width: 15px;
   height: 15px;
-  background: #5a5b44;
+  background: #ffefd1;
   border-radius: 50%;
   margin-right: 5px;
 `;
@@ -54,8 +72,10 @@ export const HeaderClose = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffefd1;
   cursor: pointer;
   svg {
+    color: #ffefd1;
     width: 20px;
     height: 20px;
   }
@@ -85,9 +105,9 @@ export const MenuActions = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
   @media screen and (max-width: 1024px) {
-    padding: 0 50px;
+    padding: 0 100px;
   }
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -101,7 +121,8 @@ export const MenuPageActions = styled.div`
   justify-content: center;
   align-items: flex-start;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(120px);
+  transition: all 1s ease-in-out;
   a {
     padding: 5px 0;
     font-size: 32px;
@@ -115,6 +136,7 @@ export const MenuPageActions = styled.div`
   }
   &.active-function {
     opacity: 1;
+    transform: translateY(0px);
   }
   & > :last-child {
     padding-top: 50px;
@@ -139,8 +161,10 @@ export const MenuContactActions = styled.div`
   position: absolute;
   bottom: 10px;
   right: 50%;
+  font-family: Forum;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(120px);
+  transition: all 1s ease-in-out;
   a {
     padding: 0 10px;
     transition: all 0.5s ease;
@@ -150,6 +174,7 @@ export const MenuContactActions = styled.div`
   }
   &.active-function {
     opacity: 1;
+    transform: translateY(0px);
   }
   & > :not(:last-child) {
     border-right: 2px solid #5a5b44;
@@ -171,7 +196,7 @@ export const MenuImage = styled.img`
   width: 50%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: all 1s ease-in-out;
   &.active-function {
     opacity: 1;
   }
@@ -181,6 +206,7 @@ export const MenuImage = styled.img`
 `;
 
 export const HeaderTitle = styled(Link)`
+  color: #ffefd1;
   font-size: 24px;
   text-transform: uppercase;
   cursor: pointer;

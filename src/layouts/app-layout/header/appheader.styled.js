@@ -1,15 +1,31 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HeaderContainer = styled.div`
+export const HeaderWrapper = styled.div`
   width: 100%;
   height: 75px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
-  margin: 0 auto;
   z-index: 200;
+`;
+
+export const HeaderContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0 25px;
+  }
 `;
 
 export const HeaderColor = styled.div`
@@ -18,7 +34,7 @@ export const HeaderColor = styled.div`
   left: 0;
   width: 100%;
   height: ${(props) => (props.isOpened || props.nav ? "100%" : "0")};
-  background: #ffefd1;
+  background: #5a5b44;
   transition: 2s ease;
   z-index: -50;
 `;
@@ -27,6 +43,7 @@ export const HeaderAction = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffefd1;
   cursor: pointer;
   p {
     visibility: hidden;
@@ -46,7 +63,7 @@ export const HeaderAction = styled.div`
 export const HeaderCircle = styled.div`
   width: 15px;
   height: 15px;
-  background: #5a5b44;
+  background: #ffefd1;
   border-radius: 50%;
   margin-right: 5px;
 `;
@@ -55,8 +72,10 @@ export const HeaderClose = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffefd1;
   cursor: pointer;
   svg {
+    color: #ffefd1;
     width: 20px;
     height: 20px;
   }
@@ -182,6 +201,7 @@ export const MenuImage = styled.img`
 `;
 
 export const HeaderTitle = styled(Link)`
+  color: #ffefd1;
   font-size: 24px;
   text-transform: uppercase;
   cursor: pointer;

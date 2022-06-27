@@ -8,7 +8,10 @@ export const FAQContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
@@ -23,14 +26,16 @@ export const FAQLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   img {
     width: 50%;
   }
   @media screen and (max-width: 768px) {
     width: 100%;
     border-right: none;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    img {
+      width: 35%;
+    }
   }
 `;
 
@@ -42,17 +47,14 @@ export const FAQRight = styled.div`
   align-items: flex-start;
   h3 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
     color: #ffefd1;
-    width: 50%;
   }
   p {
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
     line-height: 18px;
+    padding-bottom: 15px;
     color: #ffefd1;
   }
   @media screen and (max-width: 1024px) {
@@ -65,7 +67,7 @@ export const FAQRight = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 30px 0;
+    padding: 50px 0;
     align-items: center;
     text-align: center;
     h3 {
@@ -73,7 +75,6 @@ export const FAQRight = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
-    padding: 15px 0;
     h3 {
       font-size: 24px;
     }

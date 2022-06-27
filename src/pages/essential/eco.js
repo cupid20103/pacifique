@@ -10,7 +10,7 @@ const Stay = () => {
       image={stay}
       title={"stay"}
       subtitle={"Book your"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <h3>{"LUXURY ECO DOMES"}</h3>

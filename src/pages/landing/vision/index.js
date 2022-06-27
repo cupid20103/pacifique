@@ -17,8 +17,7 @@ import {
 const Vision = () => {
   return (
     <Section
-      paddingTop={"0"}
-      height={"80vh"}
+      height={"550px"}
       image={visionBG}
       bgsize={"100% 75%"}
       bgpos={"bottom"}

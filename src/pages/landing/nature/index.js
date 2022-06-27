@@ -9,7 +9,7 @@ import { NatureContainer, NatureContent, NatureGroup } from "./nature.styled";
 
 const Nature = () => {
   return (
-    <Section paddingTop={"0"} height={"80vh"} image={nature}>
+    <Section height={"450px"} image={nature}>
       <NatureContainer>
         <NatureGroup
           data-aos="fade-up"
@@ -25,9 +25,9 @@ const Nature = () => {
               {"for mindful travelers"}
             </h3>
             <p>
-              {
-                "Reconnect with your inner-self and nature while enjoying new experiences around the world"
-              }
+              {"Reconnect with your inner-self and nature while"}
+              <br />
+              {"enjoying new experiences around the world"}
             </p>
             <Action content={"Discover More"} link={"places"} mode={"scroll"} />
           </NatureContent>

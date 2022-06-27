@@ -8,8 +8,8 @@ export const DescriptionContainer = styled.div`
   position: relative;
   min-height: 100vh;
   height: fit-content;
-  background-color: #a3a38b;
-  padding: 75px 100px 50px 100px;
+  background-color: #5a5b44;
+  padding: 75px 150px 50px 150px;
   color: #000;
   z-index: 100;
   img {
@@ -31,6 +31,7 @@ export const DescriptionContainer = styled.div`
     justify-content: space-between;
   }
   @media screen and (max-width: 1024px) {
+    padding: 75px 100px 50px 100px;
     .back {
       width: 50%;
     }
@@ -55,12 +56,11 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const DescriptionContent = styled.div`
-  max-width: 1440px;
-  padding: 50px;
+  padding: 50px 0;
+  color: #ffefd1;
   h3 {
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 400;
     line-height: 24px;
     padding-bottom: 25px;
   }
@@ -70,12 +70,10 @@ export const DescriptionContent = styled.div`
   }
   b {
     font-family: Maragsa;
-    font-weight: 400;
     line-height: 18px;
   }
   p {
     font-family: Forum;
-    font-weight: 400;
     line-height: 18px;
     word-break: break-all;
   }
@@ -85,7 +83,7 @@ export const DescriptionContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 25px;
+    padding: 25px 0;
     h3 {
       font-size: 20px;
     }
@@ -102,8 +100,8 @@ export const DescriptionContent = styled.div`
 
 export const DescriptionLine = styled.div`
   height: 3px;
-  background-color: #5a5b44;
-  width: 80%;
+  background-color: #ffefd1;
+  width: 85%;
   @media screen and (max-width: 768px) {
     width: 75%;
   }

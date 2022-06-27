@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const RoomContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 25px 10px;
   border-bottom: 2px solid #000;
   img {
     width: 100%;
@@ -28,26 +28,23 @@ export const RoomContainer = styled.div`
 export const RoomText = styled.div`
   width: 100%;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   color: #000;
   h3 {
-    font-weight: 400;
     font-size: 32px;
     line-height: 32px;
     text-transform: uppercase;
   }
   b {
-    font-weight: 400;
     font-size: 18px;
     line-height: 20px;
   }
   P {
     font-family: Forum;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     word-break: break-all;

@@ -7,7 +7,6 @@ export const ModalWrapper = styled.div`
   position: relative;
   z-index: 300;
   font-family: Forum;
-  font-weight: 400;
   p {
     line-height: 18px;
     word-break: break-all;

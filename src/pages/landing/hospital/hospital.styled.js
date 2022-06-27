@@ -8,7 +8,10 @@ export const HospitalContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
@@ -36,14 +39,12 @@ export const HospitalContent = styled.div`
   h3 {
     font-size: 48px;
     line-height: 50px;
-    font-weight: 400;
     text-transform: uppercase;
   }
   p {
     width: 75%;
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
+    padding-bottom: 15px;
     line-height: 18px;
   }
   @media screen and (max-width: 1024px) {
@@ -51,14 +52,13 @@ export const HospitalContent = styled.div`
       font-size: 40px;
     }
     p {
-      padding: 10px 0;
       font-size: 14px;
     }
   }
   @media screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
-    padding-bottom: 30px;
+    padding-top: 50px;
     h3 {
       font-size: 32px;
       line-height: 1.2;
@@ -68,7 +68,6 @@ export const HospitalContent = styled.div`
     }
   }
   @media screen and (max-width: 425px) {
-    padding-bottom: 15px;
     h3 {
       font-size: 24px;
     }
@@ -81,54 +80,20 @@ export const HospitalContent = styled.div`
 export const HospitalRight = styled.div`
   width: 50%;
   height: 85%;
-  max-width: 1000px;
-  padding: 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 768px) {
     width: 80%;
-    height: 500px;
-    padding: 30px 0 30px 0;
+    height: fit-content;
+    padding: 50px 0;
   }
   @media screen and (max-width: 425px) {
     width: 100%;
-    height: 300px;
-    padding: 15px;
   }
 `;
 
-const HospitalGallery = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const HospitalBackground = styled.div`
-  background-image: url(${(props) => props.pic});
-  background-size: cover;
+export const HospitalImage = styled.img`
   width: 100%;
-`;
-
-export const HospitalGallery1 = styled(HospitalGallery)``;
-
-export const HospitalGallery2 = styled(HospitalGallery)``;
-
-export const HospitalWindow = styled(HospitalBackground)`
-  height: 45%;
-`;
-
-export const HospitalGirl = styled(HospitalBackground)`
-  height: 55%;
-`;
-
-export const HospitalDrink = styled(HospitalBackground)`
-  height: 50%;
-`;
-
-export const HospitalBike = styled(HospitalBackground)`
-  height: 50%;
+  height: 100%;
 `;

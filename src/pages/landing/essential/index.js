@@ -22,7 +22,7 @@ import { SwiperSlide } from "swiper/react";
 
 const Essential = () => {
   return (
-    <Section id={"boutique"}>
+    <Section id={"boutique"} height={"700px"}>
       <EssentialContainer>
         <EssentialLeft>
           <EssentialContent
@@ -36,6 +36,9 @@ const Essential = () => {
               breakpoints={{
                 1440: {
                   slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 2,
                 },
                 768: {
                   slidesPerView: 2,

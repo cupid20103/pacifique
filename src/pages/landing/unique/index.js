@@ -18,7 +18,7 @@ import {
 
 const Unique = () => {
   return (
-    <Section paddingTop={"0"} image={unique}>
+    <Section height={"800px"} image={unique}>
       <UniqueFormContainer>
         <UniqueFormDisplay>
           <img src={num} alt={"1111"} />

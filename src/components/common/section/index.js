@@ -7,13 +7,12 @@ const Section = (props) => {
     <SectionContainer
       id={props.id}
       color={props.color}
-      paddingTop={props.paddingTop ? props.paddingTop : "75px"}
+      paddingTop={props.paddingTop ? props.paddingTop : "0"}
       image={props.image}
-      image2={props.image2}
       bgsize={props.bgsize ? props.bgsize : "100% 100%"}
       mbgsize={props.mbgsize ? props.mbgsize : "100% 100%"}
       bgpos={props.bgpos ? props.bgpos : "center"}
-      height={props.height ? props.height : "100vh"}
+      height={props.height ? props.height : "800px"}
     >
       {props.children}
     </SectionContainer>

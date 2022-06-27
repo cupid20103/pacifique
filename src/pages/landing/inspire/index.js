@@ -5,11 +5,10 @@ import Section from "../../../components/common/section";
 import { InspireContainer, InspireContent } from "./inspire.styled";
 // @import resources
 import inspired from "../../../assets/images/faq.png";
-import filter from "../../../assets/images/filter.svg";
 
 const Inspire = () => {
   return (
-    <Section color="#5A5B44" image={inspired} image2={filter}>
+    <Section height={"650px"} color="#5A5B44" image={inspired}>
       <InspireContainer>
         <h3
           data-aos="fade-up"
@@ -32,7 +31,8 @@ const Inspire = () => {
         <h3
           data-aos="fade-up"
           data-aos-duration={"1500"}
-          className="aos-init aos-animate"
+          data-aos-offset={"75"}
+          data-aos-easing={"ease-in-sine"}
         >
           {"╰ influenced by natural landscapes"}
         </h3>

@@ -9,7 +9,6 @@ export const SectionContainer = styled.section`
   background-size: ${(props) => props.bgsize};
   background-position: ${(props) => props.bgpos};
   background-repeat: no-repeat;
-  backdrop-filter: url(${(props) => props.image2});
   @media screen and (max-width: 768px) {
     height: fit-content;
     background-size: ${(props) => props.mbgsize};

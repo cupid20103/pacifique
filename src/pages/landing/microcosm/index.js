@@ -9,18 +9,20 @@ import microcosm from "../../../assets/images/microcosm.png";
 // @import styles
 import {
   ActionGroup,
-  ActionLink,
-  Actions,
   MicrocosmContainer,
   MicrocosmContent,
-  MicrocosmFooter,
   MicrocosmLeft,
   MicrocosmRight,
 } from "./microcosm.styled";
 
 const Microcosm = () => {
   return (
-    <Section image={microcosm} height={"80vh"}>
+    <Section
+      height={"450px"}
+      image={microcosm}
+      bgsize={"100% 65%"}
+      bgpos={"bottom"}
+    >
       <MicrocosmContainer>
         <MicrocosmContent>
           <MicrocosmLeft
@@ -40,7 +42,7 @@ const Microcosm = () => {
               <br />
               {"Don't miss any announcement, be the first to know!"}
             </p>
-            <Action content={"Join Discord"} link={"#"} cType />
+            <Action content={"Join Discord"} link={"#"} micro />
           </MicrocosmLeft>
           <MicrocosmRight
             data-aos="fade-up"
@@ -77,16 +79,6 @@ const Microcosm = () => {
             </ActionGroup>
           </MicrocosmRight>
         </MicrocosmContent>
-        <MicrocosmFooter>
-          <p>{"PACIFIQUE AV © 2022 | All Rights Reserved"}</p>
-          <Actions>
-            <ActionLink email={"hello@pacifiqueav.com"} obfuscated={true}>
-              {"Contact"}
-            </ActionLink>
-            <ActionLink>{"Imprint"}</ActionLink>
-            <ActionLink>{"Privacy Policy"}</ActionLink>
-          </Actions>
-        </MicrocosmFooter>
       </MicrocosmContainer>
     </Section>
   );

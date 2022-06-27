@@ -8,14 +8,20 @@ const Action = (props) => {
       {props.mode !== "scroll" ? (
         <ActionContainer
           to={props.link}
-          fcolor={props.cType ? "#ffefd1" : "#5a5b44"}
-          bgcolor={props.cType ? "#5a5b44" : "#ffefd1"}
+          fcolor={props.micro ? "#ffefd1" : "#5a5b44"}
+          bgcolor={props.micro ? "#5a5b44" : "#ffefd1"}
           bcolor={props.faq ? "#ffefd1" : "#5a5b44"}
         >
           {props.content}
         </ActionContainer>
       ) : (
-        <ActionContainerScroll to={props.link} smooth={true} duration={1800}>
+        <ActionContainerScroll
+          to={props.link}
+          hacolor={props.hospital ? "#5a5b44" : "#ffefd1"}
+          hfcolor={props.hospital ? "#ffefd1" : "#5a5b44"}
+          smooth={true}
+          duration={1800}
+        >
           {props.content}
         </ActionContainerScroll>
       )}

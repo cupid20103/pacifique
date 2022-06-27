@@ -10,7 +10,7 @@ const Playlists = () => {
       image={playlists}
       title={"playlists"}
       subtitle={"Listen to our Pacifique AV"}
-      link={""}
+      link={"#"}
       action={"Spotify"}
     >
       <h3>{"PACIFIQUE MUSIC"}</h3>

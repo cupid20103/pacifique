@@ -9,46 +9,56 @@ export const UniqueFormContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 50px 0;
+  padding: 75px 0;
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
 `;
 
 export const UniqueFormDisplay = styled.div`
   position: absolute;
-  top: 50px;
+  top: 75px;
   left: 50%;
-  width: 15%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   img {
-    width: 100%;
+    width: 250px;
     height: auto;
   }
   @media screen and (max-width: 1024px) {
-    width: 20%;
+    img {
+      width: 200px;
+    }
   }
   @media screen and (max-width: 768px) {
-    width: 25%;
+    top: 50px;
+    img {
+      width: 150px;
+    }
   }
   @media screen and (max-width: 425px) {
-    width: 30%;
+    img {
+      width: 100px;
+    }
   }
 `;
 
 export const UniqueFormContent = styled.div`
-  width: 40%;
+  width: 650px;
   height: 100%;
   background-image: url(${uniqueform});
   background-size: 100% 100%;
   @media screen and (max-width: 1024px) {
-    width: 50%;
+    width: 575px;
   }
   @media screen and (max-width: 768px) {
-    width: 55%;
+    width: 350px;
+    height: 400px;
   }
   @media screen and (max-width: 425px) {
-    width: 85%;
+    width: 300px;
   }
 `;
 
@@ -74,19 +84,16 @@ export const UniqueContent = styled.div`
   color: #000000;
   h3 {
     font-size: 50px;
-    font-weight: 400;
     line-height: 52px;
     text-transform: uppercase;
   }
   b {
     font-size: 20px;
-    font-weight: 400;
     line-height: 22px;
     text-transform: uppercase;
   }
   p {
     font-family: Forum;
-    font-weight: 400;
     line-height: 18px;
   }
   @media screen and (max-width: 1024px) {
@@ -107,6 +114,9 @@ export const UniqueContent = styled.div`
     b {
       font-size: 16px;
     }
+    p {
+      width: 80%;
+    }
   }
   @media screen and (max-width: 425px) {
     h3 {
@@ -122,8 +132,11 @@ export const UniqueContent = styled.div`
 `;
 
 export const UniqueFormHand = styled.img`
-  width: 40%;
+  width: 285px;
   height: auto;
+  @media screen and (max-width: 1024px) {
+    width: 250px;
+  }
   @media screen and (max-width: 768px) {
     width: 30%;
     height: auto;
@@ -140,7 +153,6 @@ export const UniqueFormData = styled.div`
 export const ConnectWallet = styled(Link)`
   background-color: #ffefd1;
   color: #5a5b44;
-  border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
   transition: all 0.5s ease;

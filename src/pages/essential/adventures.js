@@ -10,7 +10,7 @@ const Cultures = () => {
       image={cultures}
       title={"cultures"}
       subtitle={"Discover new"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <b>{"Enjoy a wide range of"}</b>

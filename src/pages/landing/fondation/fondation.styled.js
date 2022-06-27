@@ -8,7 +8,10 @@ export const FondationContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
@@ -24,19 +27,17 @@ export const FondationLeft = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    width: 65%;
+    width: 60%;
   }
   @media screen and (max-width: 768px) {
     width: 80%;
-    border-right: none;
-    padding-bottom: 30px;
+    padding-top: 50px;
     img {
       width: 80%;
       height: auto;
     }
   }
   @media screen and (max-width: 425px) {
-    padding-bottom: 15px;
     img {
       width: 95%;
       height: auto;
@@ -51,25 +52,21 @@ export const FondationRight = styled.div`
   justify-content: center;
   align-items: flex-start;
   h3 {
+    width: 50%;
     font-size: 48px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
     color: #ffefd1;
-    width: 50%;
   }
   b {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
     padding-bottom: 15px;
     color: #ffefd1;
   }
   p {
-    width: 90%;
+    width: 85%;
     font-family: Forum;
-    padding: 25px 0;
-    font-weight: 400;
     line-height: 18px;
     color: #ffefd1;
     word-break: break-all;
@@ -82,30 +79,25 @@ export const FondationRight = styled.div`
       font-size: 18px;
     }
     p {
-      padding: 10px 0;
+      width: 100%;
       font-size: 14px;
     }
   }
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     align-items: center;
     text-align: center;
     h3 {
+      width: 100%;
       font-size: 32px;
       line-height: 1.2;
-      width: 100%;
     }
     b {
       font-size: 16px;
     }
-    p {
-      width: 100%;
-    }
   }
   @media screen and (max-width: 425px) {
-    padding-top: 15px;
     h3 {
       font-size: 24px;
     }

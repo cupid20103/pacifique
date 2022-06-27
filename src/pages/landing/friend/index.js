@@ -9,7 +9,7 @@ import { FriendContainer, FriendTitle, FrinedContent } from "./friend.styled";
 
 const Friend = () => {
   return (
-    <Section>
+    <Section height={"700px"}>
       <FriendContainer>
         <FriendTitle
           data-aos="fade-up"

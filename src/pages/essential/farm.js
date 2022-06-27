@@ -10,7 +10,7 @@ const Living = () => {
       image={living}
       title={"living"}
       subtitle={"Sustainable & Healthy"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <h3>{"THE FARM"}</h3>

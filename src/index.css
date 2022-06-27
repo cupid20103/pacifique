@@ -15,7 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffefd1;
   color: #5a5b44;
-  font-weight: 400;
 }
 
 code {
@@ -41,6 +40,12 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-weight: 400;
+}
+
+b,
+p {
+  font-weight: 400;
 }
 
 *,

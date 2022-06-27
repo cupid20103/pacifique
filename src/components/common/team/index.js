@@ -16,7 +16,7 @@ const Team = (props) => {
 
   return (
     <TeamContainer
-      data-aos="flip-down"
+      data-aos="fade-up"
       data-aos-duration={"1500"}
       className="aos-init aos-animate"
     >

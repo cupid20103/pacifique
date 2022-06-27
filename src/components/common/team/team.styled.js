@@ -49,7 +49,6 @@ export const TeamContent = styled.div`
 
 export const TeamAction = styled.div`
   font-family: "Forum";
-  font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   color: #5a5b44;
@@ -57,7 +56,6 @@ export const TeamAction = styled.div`
   border: 1px solid #5a5b44;
   padding: 5px 20px;
   text-align: center;
-  margin: 5px;
   cursor: pointer;
   &:hover {
     color: #ffefd1;

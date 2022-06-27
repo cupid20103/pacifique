@@ -10,7 +10,7 @@ const Spa = () => {
       image={spa}
       title={"private spa"}
       subtitle={"Book your"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <h3>{"HEALING & WELLNESS"}</h3>

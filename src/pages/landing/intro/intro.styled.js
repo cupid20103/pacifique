@@ -5,13 +5,18 @@ export const IntroContainer = styled.div`
   height: 100%;
   max-width: 1440px;
   margin: auto;
-  padding: 0 100px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     padding: 0 50px;
+    margin-top: 50px;
   }
   @media screen and (max-width: 425px) {
     padding: 0 25px;
@@ -21,25 +26,24 @@ export const IntroContainer = styled.div`
 export const IntroHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   img {
-    width: 7%;
+    width: 10%;
   }
   h3 {
-    font-weight: 400;
     font-size: 48px;
     line-height: 50px;
-    width: 30%;
     text-transform: uppercase;
+    width: 45%;
   }
   p {
-    width: 30%;
     font-family: "Forum";
-    font-weight: 400;
     font-size: 20px;
     line-height: 22px;
-    padding-left: 10%;
+    width: 45%;
+    margin: 0;
+    text-align: right;
   }
   @media screen and (max-width: 1024px) {
     h3 {
@@ -50,19 +54,20 @@ export const IntroHeader = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    align-items: center;
+    padding-bottom: 25px;
     h3 {
+      width: 40%;
       font-size: 28px;
       line-height: 1.2;
-      width: 40%;
+      text-align: center;
     }
     p {
-      font-size: 14px;
       width: 40%;
+      font-size: 14px;
       line-height: 1.2;
       word-break: break-all;
-    }
-    img {
-      width: 20%;
+      text-align: center;
     }
   }
   @media screen and (max-width: 425px) {
@@ -77,8 +82,12 @@ export const IntroHeader = styled.div`
 
 export const IntroFooter = styled.div`
   width: 100%;
+  height: 75%;
   background-color: #5a5b44;
   padding: 20px 20px;
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+  }
 `;
 
 export const IntroContent = styled.div`

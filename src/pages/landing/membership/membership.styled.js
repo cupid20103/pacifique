@@ -3,12 +3,15 @@ import styled from "styled-components";
 export const MemberContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 0 100px;
   max-width: 1440px;
   margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 150px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 100px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
@@ -19,15 +22,15 @@ export const MemberContainer = styled.div`
 `;
 
 export const MemberContent = styled.div`
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-right: 5%;
   h3 {
     font-size: 48px;
     line-height: 50px;
-    font-weight: 400;
     text-transform: uppercase;
   }
   b {
@@ -35,14 +38,11 @@ export const MemberContent = styled.div`
   }
   p {
     font-family: Forum;
-    font-weight: 400;
     line-height: 18px;
-    word-break: break-all;
   }
   @media screen and (max-width: 1024px) {
-    width: 65%;
+    padding-right: 0;
     h3 {
-      width: 75%;
       font-size: 40px;
     }
     p {
@@ -51,8 +51,8 @@ export const MemberContent = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding: 50px 0;
     align-items: center;
-    padding-bottom: 50px;
     text-align: center;
     h3 {
       font-size: 32px;
@@ -73,6 +73,7 @@ export const MemberActions = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   @media screen and (max-width: 768px) {
     justify-content: space-around;
   }

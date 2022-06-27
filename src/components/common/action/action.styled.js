@@ -4,7 +4,6 @@ import { Link as To } from "react-scroll";
 
 export const ActionContainer = styled(Link)`
   font-family: "Forum";
-  font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   color: ${(props) => props?.fcolor};
@@ -12,7 +11,6 @@ export const ActionContainer = styled(Link)`
   border: 1px solid ${(props) => props?.bcolor};
   padding: 5px 20px;
   text-align: center;
-  margin: 5px;
   transition: all 0.5s ease;
   cursor: pointer;
   &:hover {
@@ -34,20 +32,19 @@ export const ActionContainer = styled(Link)`
 
 export const ActionContainerScroll = styled(To)`
   font-family: "Forum";
-  font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   color: #ffefd1;
+  color: ${(props) => props?.hacolor};
   background-color: transparent;
-  border: 1px solid #ffefd1;
+  border: 1px solid ${(props) => props?.hacolor};
   padding: 5px 20px;
   text-align: center;
-  margin: 5px;
   transition: all 0.5s ease;
   cursor: pointer;
   &:hover {
-    color: #5a5b44;
-    background-color: #ffefd1;
+    color: ${(props) => props?.hfcolor};
+    background-color: ${(props) => props?.hacolor};
   }
   @media screen and (max-width: 1024px) {
     font-size: 16px;

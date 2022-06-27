@@ -10,7 +10,7 @@ const Menu = () => {
       image={menu}
       title={"menu"}
       subtitle={"Take a look at the"}
-      link={""}
+      link={"#"}
       action={"Coming Soon"}
     >
       <h3>{"RESTAURANT & BAR"}</h3>
