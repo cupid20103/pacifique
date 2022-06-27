@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 // @import components
 import Section from "../../../components/common/section";
 // @import resources
@@ -18,24 +18,45 @@ import {
 } from "./roadmap.styled";
 
 const Roadmap = () => {
+  const myRef = useRef();
+  const [nav, setNav] = useState(0.0);
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setIsMobile(isScreenWidth(768));
-    });
+  const changeNav = () => {
+    const top = myRef.current.getBoundingClientRect().top;
+    const bottom = myRef.current.getBoundingClientRect().bottom;
+    console.log(top, bottom, window.innerHeight);
+    if (!isMobile && top < 50 && bottom > 0) {
+      setNav(((4400 - bottom) / 350).toFixed(1));
+      console.log(((4400 - bottom) / 350).toFixed(1));
+    }
+  };
+
+  const setMobile = () => {
     setIsMobile(isScreenWidth(768));
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", setMobile);
+    setMobile();
+    return () => window.removeEventListener("resize", setMobile);
   }, []);
 
   return (
     <Section color="#5A5B44" height={isMobile ? "700px" : "4400px"}>
-      <RoadmapContainer>
-        <RoadmapLeft isMobile={isMobile}>
+      <RoadmapContainer ref={myRef}>
+        <RoadmapLeft>
           <RoadmapLeftContent
             data-aos="fade-up"
             data-aos-duration={"1500"}
             className="aos-init aos-animate"
-            isMobile={isMobile}
           >
             <h3>{"Roadmap"}</h3>
             <p>
@@ -49,12 +70,12 @@ const Roadmap = () => {
             <img src={eye} alt={"eye"} />
           </RoadmapLeftContent>
         </RoadmapLeft>
-        <RoadmapRight isMobile={isMobile}>
-          <RoadmapRightContent isMobile={isMobile}>
-            <RoadmapSteps>
+        <RoadmapRight>
+          <RoadmapRightContent>
+            <RoadmapSteps nav={nav}>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "500"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -64,7 +85,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "800"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -74,7 +95,7 @@ const Roadmap = () => {
               </RoadmapStep2>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "1100"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -90,7 +111,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "1300"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -100,7 +121,7 @@ const Roadmap = () => {
               </RoadmapStep2>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1350"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "1550"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -110,7 +131,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "1850"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -124,7 +145,7 @@ const Roadmap = () => {
               </RoadmapStep2>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "2150"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -134,7 +155,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "2450"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -148,7 +169,7 @@ const Roadmap = () => {
               </RoadmapStep2>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "2750"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -158,7 +179,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "3000"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -172,7 +193,7 @@ const Roadmap = () => {
               </RoadmapStep2>
               <RoadmapStep1
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "3300"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"
@@ -182,7 +203,7 @@ const Roadmap = () => {
               </RoadmapStep1>
               <RoadmapStep2
                 data-aos="fade-up"
-                data-aos-duration={"1200"}
+                data-aos-duration={"1000"}
                 data-aos-offset={isMobile ? "120" : "3650"}
                 data-aos-easing={"ease-in-sine"}
                 className="aos-init aos-animate"

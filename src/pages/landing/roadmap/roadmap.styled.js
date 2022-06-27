@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import line from "../../../assets/images/line.svg";
 
 export const RoadmapContainer = styled.div`
   width: 100%;
@@ -22,23 +23,24 @@ export const RoadmapContainer = styled.div`
 `;
 
 export const RoadmapLeft = styled.div`
-  width: ${(props) => (props.isMobile ? "100%" : "40%")};
+  width: 40%;
   height: 100%;
   position: relative;
   padding-left: 50px;
   @media screen and (max-width: 768px) {
+    width: 100%;
     padding-top: 50px;
   }
 `;
 
 export const RoadmapLeftContent = styled.div`
   width: 100%;
-  height: ${(props) => (props.isMobile ? "auto" : "calc(100vh - 75px)")};
-  top: ${(props) => (props.isMobile ? "auto" : "75px")};
-  position: ${(props) => (props.isMobile ? "auto" : "sticky")};
+  height: 700px;
+  top: 20%;
+  position: sticky;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
   h3 {
@@ -58,6 +60,11 @@ export const RoadmapLeftContent = styled.div`
     height: auto;
     padding-top: 75px;
   }
+  @media screen and (max-width: 1440px) {
+    height: 100vh;
+    margin-top: 50px;
+    top: 75px;
+  }
   @media screen and (max-width: 1024px) {
     h3 {
       font-size: 40px;
@@ -69,6 +76,10 @@ export const RoadmapLeftContent = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    height: auto;
+    top: auto;
+    position: auto;
+    justify-content: center;
     align-items: center;
     text-align: center;
     h3 {
@@ -94,23 +105,23 @@ export const RoadmapLeftContent = styled.div`
 `;
 
 export const RoadmapRight = styled.div`
-  width: ${(props) => (props.isMobile ? "100%" : "60%")};
+  width: 60%;
   height: 100%;
   position: relative;
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-top: 50px;
+  }
 `;
 
 export const RoadmapRightContent = styled.div`
   width: 100%;
-  height: ${(props) => (props.isMobile ? "auto" : "calc(100vh - 75px)")};
-  top: ${(props) => (props.isMobile ? "auto" : "75px")};
-  position: ${(props) => (props.isMobile ? "auto" : "sticky")};
+  height: 700px;
+  top: 20%;
+  position: sticky;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   color: #ffefd1;
   p {
@@ -118,10 +129,19 @@ export const RoadmapRightContent = styled.div`
     font-size: 16px;
   }
   @media screen and (max-width: 1440px) {
+    height: 100vh;
+    margin-top: 50px;
+    top: 75px;
     b,
     p {
       font-size: 14px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    height: auto;
+    top: auto;
+    position: auto;
+    justify-content: center;
   }
   @media screen and (max-width: 425px) {
     b,
@@ -163,9 +183,11 @@ export const RoadmapSteps = styled.div`
   :after {
     content: "";
     position: absolute;
+    background-image: url(${line});
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 3px;
-    height: 85%;
-    background-color: #ffefd1;
+    height: calc(7% * ${(props) => props.nav});
     top: 0px;
     bottom: 0px;
     border-radius: 50px;
