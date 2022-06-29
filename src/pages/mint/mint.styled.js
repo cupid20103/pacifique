@@ -5,10 +5,11 @@ import mintform from "../../assets/images/form.svg";
 export const MintFormContainer = styled.div`
   width: 100%;
   height: 100vh;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a3a38b;
+  background-color: #5a5b44;
   color: #ffefd1;
   position: relative;
   padding-top: 75px;
@@ -43,7 +44,7 @@ export const MintFormDisplay = styled.div`
   top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 150px;
+  font-size: 125px;
   @media screen and (max-width: 1024px) {
     font-size: 120px;
   }

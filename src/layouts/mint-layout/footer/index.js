@@ -1,22 +1,27 @@
 import React from "react";
 // @import styles
 import {
-  FooterAction,
-  FooterActions,
+  ActionLink,
+  Actions,
   FooterContainer,
+  FooterWrapper,
 } from "./mintfooter.styled";
 
-const MintFooter = () => {
+const LandingFooter = () => {
   return (
-    <FooterContainer>
-      <p>{"PACIFIQUE AV © 2022 | All Rights Reserved"}</p>
-      <FooterActions>
-        <FooterAction to={"/"}>{"Contact"}</FooterAction>
-        <FooterAction to={"/"}>{"Imprint"}</FooterAction>
-        <FooterAction to={"/"}>{"Privacy Policy"}</FooterAction>
-      </FooterActions>
-    </FooterContainer>
+    <FooterWrapper>
+      <FooterContainer>
+        <p>{"PACIFIQUE AV © 2022 | All Rights Reserved"}</p>
+        <Actions>
+          <ActionLink email={"hello@pacifiqueav.com"} obfuscated={true}>
+            {"Contact"}
+          </ActionLink>
+          <ActionLink>{"Imprint"}</ActionLink>
+          <ActionLink>{"Privacy Policy"}</ActionLink>
+        </Actions>
+      </FooterContainer>
+    </FooterWrapper>
   );
 };
 
-export default MintFooter;
+export default LandingFooter;

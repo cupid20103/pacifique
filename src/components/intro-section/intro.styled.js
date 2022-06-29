@@ -1,12 +1,21 @@
 import styled from "styled-components";
 
-export const IntroContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const IntroWrapper = styled.div`
   width: 100%;
   height: 100%;
   background-color: #5a5b44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const IntroContainer = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 75px 150px 0 150px;
   @media screen and (max-width: 1024px) {
     padding: 75px 100px 0 100px;

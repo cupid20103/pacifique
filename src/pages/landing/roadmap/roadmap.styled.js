@@ -35,7 +35,8 @@ export const RoadmapLeft = styled.div`
 
 export const RoadmapLeftContent = styled.div`
   width: 100%;
-  height: 700px;
+
+  min-height: 650px;
   top: 20%;
   position: sticky;
   display: flex;
@@ -117,6 +118,7 @@ export const RoadmapRight = styled.div`
 export const RoadmapRightContent = styled.div`
   width: 100%;
   height: 700px;
+  min-height: 650px;
   top: 20%;
   position: sticky;
   display: flex;
@@ -188,6 +190,7 @@ export const RoadmapSteps = styled.div`
     background-size: cover;
     width: 3px;
     height: calc(7% * ${(props) => props.nav});
+    max-height: 350px;
     top: 0px;
     bottom: 0px;
     border-radius: 50px;

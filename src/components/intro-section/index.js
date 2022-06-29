@@ -10,33 +10,36 @@ import {
   IntroContent,
   IntroLeft,
   IntroRight,
+  IntroWrapper,
 } from "./intro.styled";
 
 const IntroSection = (props) => {
   return (
     <AppLayout>
       <Section height={"100vh"}>
-        <IntroContainer>
-          <IntroLeft>
-            <IntroContent
+        <IntroWrapper>
+          <IntroContainer>
+            <IntroLeft>
+              <IntroContent
+                data-aos="fade-up"
+                data-aos-duration={"1200"}
+                className="aos-init aos-animate"
+              >
+                {props.children}
+              </IntroContent>
+            </IntroLeft>
+            <IntroRight
               data-aos="fade-up"
               data-aos-duration={"1200"}
               className="aos-init aos-animate"
             >
-              {props.children}
-            </IntroContent>
-          </IntroLeft>
-          <IntroRight
-            data-aos="fade-up"
-            data-aos-duration={"1200"}
-            className="aos-init aos-animate"
-          >
-            <img src={props.image} alt={"introduce"} />
-            <b>{props.subtitle}</b>
-            <h3>{props.title}</h3>
-            <Action link={props.link} content={props.action} micro faq />
-          </IntroRight>
-        </IntroContainer>
+              <img src={props.image} alt={"introduce"} />
+              <b>{props.subtitle}</b>
+              <h3>{props.title}</h3>
+              <Action link={props.link} content={props.action} micro faq />
+            </IntroRight>
+          </IntroContainer>
+        </IntroWrapper>
       </Section>
     </AppLayout>
   );

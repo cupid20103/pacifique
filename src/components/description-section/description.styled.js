@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
+export const DescriptionWrapper = styled.div`
+  background-color: #5a5b44;
+  width: 100%;
+  height: 100%;
+`;
+
 export const DescriptionContainer = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  min-height: 100vh;
-  height: fit-content;
-  background-color: #5a5b44;
   padding: 75px 150px 50px 150px;
   color: #000;
   z-index: 100;
