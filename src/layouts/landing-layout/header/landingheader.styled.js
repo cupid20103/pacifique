@@ -86,7 +86,7 @@ export const HeaderClose = styled.div`
 
 export const HeaderMenu = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -101,6 +101,7 @@ export const HeaderMenu = styled.div`
 
 export const MenuActions = styled.div`
   width: 50%;
+  max-width: 720px;
   display: flex;
   flex-direction: column;
   justify-content: center;

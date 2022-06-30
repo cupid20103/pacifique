@@ -10,12 +10,18 @@ export const TeamContainer = styled.div`
 
 export const TeamAvatar = styled.div`
   width: 100%;
-  height: 40vh;
+  height: 300px;
   background-image: url(${(props) => props.avatar});
   background-size: cover;
   background-position: top;
+  @media screen and (max-width: 1024px) {
+    height: 250px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 350px;
+  }
   @media screen and (max-width: 425px) {
-    height: 300px;
+    height: 325px;
   }
 `;
 
@@ -31,7 +37,7 @@ export const TeamContent = styled.div`
     line-height: 1.2;
     margin-bottom: 10px;
     min-height: 35px;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1240px) {
       min-height: 65px;
     }
     @media screen and (max-width: 768px) {

@@ -65,7 +65,7 @@ export const FondationRight = styled.div`
     color: #ffefd1;
   }
   p {
-    width: 85%;
+    width: 80%;
     font-family: Forum;
     line-height: 18px;
     color: #ffefd1;

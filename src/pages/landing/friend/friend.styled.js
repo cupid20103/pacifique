@@ -76,7 +76,6 @@ export const FrinedContent = styled.div`
     gap: 35px;
   }
   @media screen and (max-width: 425px) {
-    width: 80%;
     grid-template-columns: auto;
   }
 `;

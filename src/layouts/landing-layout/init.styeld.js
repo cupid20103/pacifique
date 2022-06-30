@@ -40,11 +40,11 @@ export const Overlay = styled.div`
   overflow: hidden;
   background-color: #ffefd1;
   z-index: 500;
-  animation: ${loader} 4s ease-in-out;
+  animation: ${loader} 3s ease-in-out;
   & > .welcome {
     ::after {
       content: "Welcome";
-      animation: ${fontAnimation} 3s;
+      animation: ${fontAnimation} 2s;
     }
     font-size: 24px;
     color: #5a5b44;

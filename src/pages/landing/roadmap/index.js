@@ -47,7 +47,7 @@ const Roadmap = () => {
   }, []);
 
   return (
-    <Section color="#5A5B44" height={isMobile ? "700px" : "4400px"}>
+    <Section color="#5A5B44" height={isMobile ? "fit-content" : "4400px"}>
       <RoadmapContainer ref={myRef}>
         <RoadmapLeft>
           <RoadmapLeftContent

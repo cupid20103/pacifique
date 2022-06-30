@@ -30,12 +30,12 @@ export const RoadmapLeft = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     padding-top: 50px;
+    padding-left: 0;
   }
 `;
 
 export const RoadmapLeftContent = styled.div`
   width: 100%;
-
   min-height: 650px;
   top: 20%;
   position: sticky;
@@ -78,10 +78,12 @@ export const RoadmapLeftContent = styled.div`
   }
   @media screen and (max-width: 768px) {
     height: auto;
+    min-height: auto;
     top: auto;
     position: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     text-align: center;
     h3 {
       font-size: 32px;
@@ -111,7 +113,7 @@ export const RoadmapRight = styled.div`
   position: relative;
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding-top: 50px;
+    padding: 50px 0;
   }
 `;
 
@@ -147,9 +149,11 @@ export const RoadmapRightContent = styled.div`
   }
   @media screen and (max-width: 768px) {
     height: auto;
+    min-height: auto;
     top: auto;
     position: auto;
     justify-content: center;
+    margin-top: 0;
   }
 `;
 
@@ -214,7 +218,8 @@ export const RoadmapSteps = styled.div`
   @media screen and (max-width: 768px) {
     height: auto;
     :after {
-      height: auto;
+      height: 100%;
+      max-height: none;
     }
     & :not(:first-child) {
       top: 0px;
