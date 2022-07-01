@@ -1,5 +1,6 @@
 import React from "react";
 // @import resources
+import video from "../../../assets/images/video.mp4";
 import poster from "../../../assets/images/poster.png";
 // @import styles
 import {
@@ -14,8 +15,7 @@ const Hero = () => {
     <HeroContainer id="hero">
       <HeroBack>
         <video autoPlay loop muted poster={poster}>
-          {/* <source src="https://uploads-ssl.webflow.com/61e9d1095d09e7c706664173/626ba9d0cdd51f2c7c7fdeb4_homevideo-transcode.mp4" /> */}
-          <source src="#" />
+          <source src={video} />
         </video>
       </HeroBack>
       <HeroContent>
