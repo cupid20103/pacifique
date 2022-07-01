@@ -125,14 +125,23 @@ export const MenuPageActions = styled.div`
   transform: translateY(120px);
   transition: all 1s ease-in-out;
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 0;
     font-size: 32px;
+    color: #000;
     text-transform: uppercase;
     font-weight: 500;
     transition: all 0.5s ease;
     cursor: pointer;
+    span {
+      color: #5a5b44;
+      font-size: 16px;
+      padding-left: 15px;
+    }
     &:hover {
-      color: #000;
+      color: #5a5b44;
     }
   }
   &.active-function {
@@ -145,15 +154,27 @@ export const MenuPageActions = styled.div`
   @media screen and (max-width: 1024px) {
     a {
       font-size: 28px;
+      span {
+        font-size: 14px;
+      }
     }
   }
   @media screen and (max-width: 768px) {
     align-items: center;
+    a {
+      flex-direction: column;
+      span {
+        padding-left: 0px;
+      }
+    }
   }
   @media screen and (max-width: 425px) {
     margin-top: -50px;
     a {
       font-size: 24px;
+      span {
+        font-size: 12px;
+      }
     }
   }
 `;

@@ -81,6 +81,7 @@ const AppHeader = () => {
               </Link>
               <Link to={"/"} onClick={handleMenuToggle}>
                 {"Places"}
+                <span>{"Coming soon"}</span>
               </Link>
               <a
                 href={"https://pacifiqueav.medium.com/"}
@@ -88,6 +89,7 @@ const AppHeader = () => {
                 rel="noreferrer"
               >
                 {"JOURNAL"}
+                <span>{"Medium link"}</span>
               </a>
               <Link to={"/"} onClick={handleMenuToggle}>
                 {"Boutique"}
