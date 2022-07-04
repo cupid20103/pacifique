@@ -14,19 +14,19 @@ const loader = keyframes`
 
 const fontAnimation = keyframes`
   0% {
-    content: "Welcome";
+    content: "WELCOME";
   }
   25% {
-    content: "Bienvenue";
+    content: "BIENVENUE";
   }
   50% {
-    content: "Benvenuti";
+    content: "BENVENUTI";
   }
   75% {
     content: "مَرْحَباً";
   }
   100%{
-    content: "Welcome";
+    content: "WELCOME";
   }
 `;
 
@@ -43,7 +43,7 @@ export const Overlay = styled.div`
   animation: ${loader} 3s ease-in-out;
   & > .welcome {
     ::after {
-      content: "Welcome";
+      content: "WELCOME";
       animation: ${fontAnimation} 2s;
     }
     font-size: 24px;

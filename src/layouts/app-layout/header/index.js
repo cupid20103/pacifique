@@ -93,6 +93,7 @@ const AppHeader = () => {
               </a>
               <Link to={"/"} onClick={handleMenuToggle}>
                 {"Boutique"}
+                <span>{"Coming soon"}</span>
               </Link>
             </MenuPageActions>
             <MenuContactActions id="menu-contact">
@@ -106,6 +107,7 @@ const AppHeader = () => {
                   {item.value}
                 </a>
               ))}
+              <a href={"mailto:hello@pacifiqueav.com"}>{"Contact"}</a>
             </MenuContactActions>
           </MenuActions>
           <MenuImage id="menu-img" src={city} alt={"city"} />

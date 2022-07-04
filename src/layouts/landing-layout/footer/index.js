@@ -13,7 +13,7 @@ const LandingFooter = () => {
       <FooterContainer>
         <p>{"PACIFIQUE AV © 2022 | All Rights Reserved"}</p>
         <Actions>
-          <ActionLink email={"hello@pacifiqueav.com"} obfuscated={true}>
+          <ActionLink href={"mailto:hello@pacifiqueav.com"}>
             {"Contact"}
           </ActionLink>
           <ActionLink>{"Imprint"}</ActionLink>

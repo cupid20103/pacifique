@@ -190,6 +190,7 @@ export const MenuContactActions = styled.div`
   a {
     padding: 0 10px;
     transition: all 0.5s ease;
+    cursor: pointer;
     &:hover {
       color: #000;
     }

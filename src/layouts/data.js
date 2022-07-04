@@ -8,11 +8,7 @@ export const contacts = [
     value: "Instagram",
   },
   {
-    to: "/",
+    to: "https://discord.gg/eF2Ptw6MVM",
     value: "Join the Community",
-  },
-  {
-    to: "/",
-    value: "Contact",
   },
 ];

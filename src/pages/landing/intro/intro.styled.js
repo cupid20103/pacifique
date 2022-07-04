@@ -66,7 +66,6 @@ export const IntroHeader = styled.div`
       width: 40%;
       font-size: 14px;
       line-height: 1.2;
-      word-break: break-all;
       text-align: center;
     }
   }
@@ -75,7 +74,7 @@ export const IntroHeader = styled.div`
       font-size: 18px;
     }
     p {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `;

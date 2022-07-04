@@ -8,8 +8,8 @@ const Action = (props) => {
       {props.mode !== "scroll" ? (
         <ActionContainer
           to={props.link}
-          fcolor={props.micro ? "#ffefd1" : "#5a5b44"}
-          bgcolor={props.micro ? "#5a5b44" : "#ffefd1"}
+          fcolor={"#5a5b44"}
+          bgcolor={"#ffefd1"}
           bcolor={props.faq ? "#ffefd1" : "#5a5b44"}
         >
           {props.content}

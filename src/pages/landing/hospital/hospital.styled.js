@@ -79,7 +79,6 @@ export const HospitalContent = styled.div`
 
 export const HospitalRight = styled.div`
   width: 50%;
-  height: 85%;
   display: flex;
   justify-content: center;
   align-items: center;

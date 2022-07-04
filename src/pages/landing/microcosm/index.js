@@ -2,7 +2,6 @@ import React from "react";
 import { SiTwitter, SiInstagram, SiDiscord, SiMedium } from "react-icons/si";
 // @import components
 import Section from "../../../components/common/section";
-import Action from "../../../components/common/action";
 // @import resources
 import content from "../../../assets/images/vision_content.svg";
 import microcosm from "../../../assets/images/microcosm.png";
@@ -42,7 +41,13 @@ const Microcosm = () => {
               <br />
               {"Don't miss any announcement, be the first to know!"}
             </p>
-            <Action content={"Join Discord"} link={"#"} micro />
+            <a
+              href={"https://discord.gg/eF2Ptw6MVM"}
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              {"Join Discord"}
+            </a>
           </MicrocosmLeft>
           <MicrocosmRight
             data-aos="fade-up"
@@ -66,7 +71,11 @@ const Microcosm = () => {
               >
                 <SiInstagram />
               </a>
-              <a href={"/"} target={"_blank"} rel="noreferrer">
+              <a
+                href={"https://discord.gg/eF2Ptw6MVM"}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <SiDiscord />
               </a>
               <a

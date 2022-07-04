@@ -47,6 +47,23 @@ export const MicrocosmLeft = styled.div`
     line-height: 18px;
     width: 75%;
   }
+  a {
+    font-family: "Forum";
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffefd1;
+    background-color: #5a5b44;
+    border: 1px solid #5a5b44;
+    margin-top: 50px;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      color: #5a5b44;
+      background-color: #ffefd1;
+    }
+  }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     h3 {
@@ -55,6 +72,10 @@ export const MicrocosmLeft = styled.div`
     p {
       width: 100%;
       font-size: 14px;
+    }
+    a {
+      font-size: 16px;
+      padding: 5px 15px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -66,6 +87,9 @@ export const MicrocosmLeft = styled.div`
       font-size: 32px;
       line-height: 1.2;
     }
+    a {
+      font-size: 14px;
+    }
   }
   @media screen and (max-width: 425px) {
     width: 100%;
@@ -74,6 +98,11 @@ export const MicrocosmLeft = styled.div`
     }
     p {
       font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+      margin-top: 25px;
+      padding: 5px 10px;
     }
   }
 `;
