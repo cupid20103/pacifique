@@ -70,7 +70,7 @@ const AppHeader = () => {
         ) : (
           <HeaderClose onClick={handleMenuToggle}>
             <FaTimes />
-            {"Close"}
+            <p>{"Close"}</p>
           </HeaderClose>
         )}
         <HeaderMenu isOpened={isOpened}>

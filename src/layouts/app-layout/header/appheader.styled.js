@@ -66,6 +66,10 @@ export const HeaderCircle = styled.div`
   background: #ffefd1;
   border-radius: 50%;
   margin-right: 5px;
+  @media screen and (max-width: 425px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
 export const HeaderClose = styled.div`
@@ -81,6 +85,10 @@ export const HeaderClose = styled.div`
   }
   @media screen and (max-width: 425px) {
     font-size: 12px;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
   }
 `;
 
