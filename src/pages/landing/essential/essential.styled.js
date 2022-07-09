@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Swiper } from "swiper/react";
 import { Link } from "react-router-dom";
+import arrow from "../../../assets/images/arrow.svg";
 
 export const EssentialContainer = styled.div`
   width: 100%;
@@ -42,7 +43,7 @@ export const EssentialContent = styled.div`
 
 export const SwiperContainer = styled(Swiper)`
   width: 100%;
-  height: 100%;
+  height: 75%;
 `;
 
 export const EssentialSlider = styled(Link)`
@@ -58,12 +59,16 @@ export const EssentialSlider = styled(Link)`
 
 export const HeaderImage = styled.img`
   width: 100%;
-  border-radius: 15px;
+  transform: ${(props) => (!props.isCurrent ? "scale(1)" : "scale(1.1)")};
+  transition: all 0.5s ease;
+  @media screen and (min-width: 1440px) {
+    transform: ${(props) => (props.isCurrent ? "scale(1)" : "scale(1.1)")};
+  }
 `;
 
-export const FooterImage = styled.img`
-  width: auto;
-  height: 75px;
+export const SlideText = styled.p`
+  margin-top: 50px;
+  opacity: ${(props) => (props.isCurrent ? 0.4 : 1)};
 `;
 
 export const EssentialRight = styled.div`
@@ -108,6 +113,47 @@ export const EssentialRight = styled.div`
     }
     p {
       font-size: 12px;
+    }
+  }
+`;
+
+export const EssentialAction = styled.div`
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MoveAction = styled.div`
+  width: 5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #242022;
+  border-radius: 100vw;
+  background-image: url(${arrow});
+  background-position: 50% 50%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  @media screen and (max-width: 425px) {
+    width: 3rem;
+    height: 2rem;
+  }
+  &.prev {
+    opacity: ${(props) => (props.current === 0 ? 0.4 : 1)};
+    transform: rotate(-180deg);
+  }
+  &.next {
+    opacity: ${(props) => (props.current === 6 ? 0.4 : 1)};
+    @media screen and (min-width: 425px) {
+      opacity: ${(props) => (props.current === 5 ? 0.4 : 1)};
+    }
+    @media screen and (min-width: 1440px) {
+      opacity: ${(props) => (props.current === 4 ? 0.4 : 1)};
     }
   }
 `;

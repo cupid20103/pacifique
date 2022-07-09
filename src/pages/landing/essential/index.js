@@ -1,7 +1,6 @@
-import React from "react";
-import { Autoplay, Pagination } from "swiper";
+import React, { useState } from "react";
+import { SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
 // @import components
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
@@ -9,18 +8,22 @@ import Section from "../../../components/common/section";
 import { data } from "./data";
 // @import styles
 import {
+  EssentialAction,
   EssentialContainer,
   EssentialContent,
   EssentialLeft,
   EssentialRight,
   EssentialSlider,
-  FooterImage,
   HeaderImage,
+  MoveAction,
+  SlideText,
   SwiperContainer,
 } from "./essential.styled";
-import { SwiperSlide } from "swiper/react";
 
 const Essential = () => {
+  const swiperRef = React.useRef(null);
+  const [swiperIndex, setSwiperIndex] = useState(0);
+
   return (
     <Section id={"boutique"} height={"700px"}>
       <EssentialContainer>
@@ -31,6 +34,10 @@ const Essential = () => {
             className="aos-init aos-animate"
           >
             <SwiperContainer
+              ref={swiperRef}
+              onSlideChange={(e) => {
+                setSwiperIndex(e.activeIndex);
+              }}
               slidesPerView={1}
               spaceBetween={30}
               breakpoints={{
@@ -51,21 +58,40 @@ const Essential = () => {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Autoplay, Pagination]}
             >
               {data.map((item, index) => (
                 <SwiperSlide key={index}>
                   <EssentialSlider to={item.link}>
-                    <HeaderImage src={item.image1} alt={"content"} />
-                    <p>{item.title}</p>
-                    <FooterImage src={item.image2} alt={"draw"} />
+                    <HeaderImage
+                      isCurrent={index !== swiperIndex + 1}
+                      src={item.image}
+                      alt={"content"}
+                    />
+                    <SlideText isCurrent={index !== swiperIndex + 1}>
+                      {item.title}
+                    </SlideText>
                   </EssentialSlider>
                 </SwiperSlide>
               ))}
             </SwiperContainer>
+            <EssentialAction>
+              <MoveAction
+                className="prev"
+                current={swiperIndex}
+                onClick={() => {
+                  swiperRef.current.swiper.slidePrev();
+                  setSwiperIndex(swiperRef.current.swiper.activeIndex);
+                }}
+              />
+              <MoveAction
+                className="next"
+                current={swiperIndex}
+                onClick={() => {
+                  swiperRef.current.swiper.slideNext();
+                  setSwiperIndex(swiperRef.current.swiper.activeIndex);
+                }}
+              />
+            </EssentialAction>
           </EssentialContent>
         </EssentialLeft>
         <EssentialRight
