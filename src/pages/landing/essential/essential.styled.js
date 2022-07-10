@@ -68,7 +68,10 @@ export const HeaderImage = styled.img`
 
 export const SlideText = styled.p`
   margin-top: 50px;
-  opacity: ${(props) => (props.isCurrent ? 0.4 : 1)};
+  opacity: ${(props) => (!props.isCurrent ? 0.4 : 1)};
+  @media screen and (min-width: 1440px) {
+    opacity: ${(props) => (props.isCurrent ? 0.4 : 1)};
+  }
 `;
 
 export const EssentialRight = styled.div`
