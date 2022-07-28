@@ -1,10 +1,7 @@
 import React from "react";
-// @import components
 import Section from "../../../components/common/section";
-// @import resources
 import fondation from "../../../assets/images/fondation.png";
 import people from "../../../assets/images/people.svg";
-// @import styles
 import {
   FondationContainer,
   FondationLeft,

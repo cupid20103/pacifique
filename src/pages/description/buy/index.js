@@ -1,12 +1,9 @@
 import React from "react";
-// @import layouts
 import { AppLayout } from "../../../layouts";
-// @import components
 import Description from "../../../components/description-section";
-// @import styles
 import { BuyContainer, BuyLeft, BuyRight } from "./buy.styled";
 
-const Value = () => {
+const Buy = () => {
   return (
     <AppLayout>
       <Description title={"How to buy"}>
@@ -105,4 +102,4 @@ const Value = () => {
   );
 };
 
-export default Value;
+export default Buy;

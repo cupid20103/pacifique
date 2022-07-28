@@ -1,70 +1,85 @@
 # Pacifique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Marketing and landing site for **Pacifique AV** (Pacifique Humans Club), a smart luxury eco-retreat concept paired with an NFT membership. The site presents the brand vision, membership benefits, team, and roadmap, and includes a MetaMask wallet connection flow for the NFT mint.
 
-## Available Scripts
+It is a single page React application with a few additional routed pages, styled with styled-components and animated on scroll.
 
-In the project directory, you can run:
+## Tech stack
 
-### `npm start`
+- **React 18** with React Router v6 for routing and lazy-loaded routes
+- **styled-components** for all component styling
+- **web3.js** with MetaMask for wallet connection (Ethereum mainnet)
+- **Create React App** built through **react-app-rewired** (see `config-overrides.js`, which adds the Node polyfills web3 needs in the browser)
+- **Swiper** for the carousel, **AOS** for scroll animations, **react-scroll** for in-page navigation, **react-toastify** for notifications, **react-icons** for icons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project dates from 2022 and targets the toolchain of that time. Use a Node.js version compatible with `react-scripts` 5 (Node 16 or 18 is recommended). Newer Node versions may fail to build.
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server at [http://localhost:3000](http://localhost:3000):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Available scripts
 
-### `npm run eject`
+- `npm start`: runs the app in development mode with hot reload.
+- `npm run build`: builds the production bundle into the `build` folder (source maps are disabled).
+- `npm test`: runs the test runner in watch mode.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+All scripts run through `react-app-rewired` so the custom webpack configuration in `config-overrides.js` is applied.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Routes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Path | Page |
+| --- | --- |
+| `/` | Landing page (all marketing sections) |
+| `/eco`, `/restaurant`, `/farm`, `/healing`, `/adventures`, `/music`, `/boutique` | "Essential" experience pages |
+| `/values`, `/benefits`, `/nfts`, `/buy`, `/faq` | Membership and NFT description pages |
+| `/mint` | NFT mint page (wallet connection) |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```
+src/
+  App.js                 Routing and web3 / MetaMask setup
+  index.js               App entry point
+  polyfill.js            Browser polyfills for web3 (Buffer, process)
+  contexts/              EthereumContext (provider, accounts, web3, current account)
+  layouts/
+    common/header/       Shared header (chrome and menu logic)
+    landing-layout/      Landing header, footer, and intro overlay
+    app-layout/          Header used by sub pages
+    mint-layout/         Layout for the mint page
+  components/
+    common/              Reusable pieces (section, modal, room, team, action)
+    intro-section/       Shared layout for the essential pages
+    description-section/ Shared layout for the description pages
+  pages/
+    landing/             Homepage sections (hero, vision, nature, roadmap, ...)
+    essential/           Eco, restaurant, farm, healing, adventures, music, boutique
+    description/         Values, benefits, nfts, buy, faq
+    mint/                Mint form
+  utils/                 Helpers (isScreenWidth)
+  assets/                Fonts and images
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Conventions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Each component lives in its own folder as `index.js` (logic and markup) plus a `*.styled.js` file for its styled-components.
+- Static content (lists, copy collections) is kept in a sibling `data.js`.
+- The two header variants share a single `Header` in `layouts/common/header`; the landing variant passes in-page scroll links and the app variant passes route links.
 
-### Code Splitting
+## Web3 notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The app expects the **MetaMask** browser extension and the **Ethereum mainnet**. It shows a toast if MetaMask is missing or the wrong network is selected.
+- The mint page currently handles wallet connection and the mint UI. Wiring it to a deployed contract is left as a follow up.

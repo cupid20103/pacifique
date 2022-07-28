@@ -1,11 +1,8 @@
 import React from "react";
 import { toast } from "react-toastify";
-// @import layouts
 import { MintLayout } from "../../layouts";
-// @import resources
 import hand from "../../assets/images/hand.png";
 import { useEthContext } from "../../contexts/EthereumContext";
-// @import styles
 import {
   ConnectWallet,
   MintFormAmount,

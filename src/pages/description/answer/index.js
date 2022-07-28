@@ -1,12 +1,9 @@
 import React from "react";
-// @import layouts
 import { AppLayout } from "../../../layouts";
-// @import components
 import Description from "../../../components/description-section";
-// @import styles
 import { AnswerContainer, AnswerLeft, AnswerRight } from "./answer.styled";
 
-const Value = () => {
+const FAQ = () => {
   return (
     <AppLayout>
       <Description title={"FAQ’s - MEMBERSHIP"}>
@@ -121,4 +118,4 @@ const Value = () => {
   );
 };
 
-export default Value;
+export default FAQ;

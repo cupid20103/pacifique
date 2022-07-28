@@ -1,10 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-// @import components
 import Section from "../../../components/common/section";
-// @import resources
 import eye from "../../../assets/images/eye.svg";
 import { isScreenWidth } from "../../../utils/isScreenWidth";
-// @import styles
 import {
   RoadmapContainer,
   RoadmapFooter,

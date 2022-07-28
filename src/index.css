@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Forum";
-  src: url("/src/assets/fonts/Forum/Forum-Regular.ttf");
+  src: url("./assets/fonts/Forum/Forum-Regular.ttf");
 }
 @font-face {
   font-family: "Maragsa";
-  src: url("/src/assets/fonts/Maragsa/Maragsâ.otf");
+  src: url("./assets/fonts/Maragsa/Maragsa-Regular.otf");
 }
 
 html,

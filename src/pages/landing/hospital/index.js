@@ -1,10 +1,7 @@
 import React from "react";
-// @import components
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
-// @import resources
 import hospital from "../../../assets/images/hospital.png";
-// @import styles
 import {
   HospitalContainer,
   HospitalContent,

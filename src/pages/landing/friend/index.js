@@ -1,11 +1,8 @@
 import React from "react";
-// @import components
 import Section from "../../../components/common/section";
 import Team from "../../../components/common/team";
-// @import resources
 import { data } from "./data";
-// @import styles
-import { FriendContainer, FriendTitle, FrinedContent } from "./friend.styled";
+import { FriendContainer, FriendTitle, FriendContent } from "./friend.styled";
 
 const Friend = () => {
   return (
@@ -19,7 +16,7 @@ const Friend = () => {
           <b>{"Meet our Team"}</b>
           <h3>{"Your Friends"}</h3>
         </FriendTitle>
-        <FrinedContent>
+        <FriendContent>
           {data.map((item, index) => (
             <Team
               key={index}
@@ -34,7 +31,7 @@ const Friend = () => {
               linkedin={item.linkedin}
             />
           ))}
-        </FrinedContent>
+        </FriendContent>
       </FriendContainer>
     </Section>
   );

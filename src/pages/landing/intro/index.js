@@ -1,11 +1,8 @@
 import React from "react";
-// @import components
 import Room from "../../../components/common/room";
 import Section from "../../../components/common/section";
-// @import resources
 import { data } from "./data";
 import symbol from "../../../assets/images/symbol.svg";
-// @import style
 import {
   IntroContainer,
   IntroContent,

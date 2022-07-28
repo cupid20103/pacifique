@@ -1,11 +1,8 @@
 import React from "react";
 import Action from "../../../components/common/action";
-// @import components
 import Section from "../../../components/common/section";
-// @import resources
 import visionCT from "../../../assets/images/vision_content.svg";
 import visionBG from "../../../assets/images/vision_bg.png";
-// @import styles
 import {
   VisionContainer,
   VisionContent,

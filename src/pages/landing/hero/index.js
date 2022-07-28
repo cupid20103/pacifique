@@ -1,8 +1,6 @@
 import React from "react";
-// @import resources
 import video from "../../../assets/images/video.mp4";
 import poster from "../../../assets/images/poster.png";
-// @import styles
 import {
   HeroContainer,
   HeroBack,

@@ -61,7 +61,7 @@ export const FriendTitle = styled.div`
   }
 `;
 
-export const FrinedContent = styled.div`
+export const FriendContent = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto;

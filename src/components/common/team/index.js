@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-// @import components
 import Modal from "../modal";
-// @import styles
 import {
   TeamAction,
   TeamAvatar,

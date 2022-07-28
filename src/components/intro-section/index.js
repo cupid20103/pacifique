@@ -1,10 +1,7 @@
 import React from "react";
-// @import layouts
 import { AppLayout } from "../../layouts/";
-// @import components
 import Action from "../common/action";
 import Section from "../common/section";
-// @import styles
 import {
   IntroContainer,
   IntroContent,
@@ -36,7 +33,7 @@ const IntroSection = (props) => {
               <img src={props.image} alt={"introduce"} />
               <b>{props.subtitle}</b>
               <h3>{props.title}</h3>
-              <Action link={props.link} content={props.action} micro faq />
+              <Action link={props.link} content={props.action} faq />
             </IntroRight>
           </IntroContainer>
         </IntroWrapper>

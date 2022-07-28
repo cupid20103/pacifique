@@ -1,7 +1,5 @@
 import React from "react";
-// @import components
 import IntroSection from "../../components/intro-section";
-// @import resources
 import menu from "../../assets/images/menu.svg";
 
 const Menu = () => {

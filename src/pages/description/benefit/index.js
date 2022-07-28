@@ -1,14 +1,10 @@
 import React from "react";
-// @import layouts
 import { AppLayout } from "../../../layouts";
-// @import components
 import Description from "../../../components/description-section";
-// @import resources
 import benefit from "../../../assets/images/benefit.svg";
-// @import styles
 import { BenefitContainer, BenefitLeft, BenefitRight } from "./benefit.styled";
 
-const Value = () => {
+const Benefit = () => {
   return (
     <AppLayout>
       <Description title={"MEMBERSHIP BENEFITS"} img={benefit}>
@@ -105,4 +101,4 @@ const Value = () => {
   );
 };
 
-export default Value;
+export default Benefit;

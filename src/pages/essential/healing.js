@@ -1,7 +1,5 @@
 import React from "react";
-// @import components
 import IntroSection from "../../components/intro-section";
-// @import resources
 import spa from "../../assets/images/spa.svg";
 
 const Spa = () => {

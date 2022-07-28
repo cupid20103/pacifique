@@ -1,5 +1,4 @@
 import React from "react";
-// @import styles
 import { ActionContainer, ActionContainerScroll } from "./action.styled";
 
 const Action = (props) => {

@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 import "swiper/css";
-// @import components
 import Action from "../../../components/common/action";
 import Section from "../../../components/common/section";
-// @import resources
 import { data } from "./data";
-// @import styles
 import {
   EssentialAction,
   EssentialContainer,
@@ -35,6 +33,7 @@ const Essential = () => {
           >
             <SwiperContainer
               ref={swiperRef}
+              modules={[Autoplay]}
               onSlideChange={(e) => {
                 setSwiperIndex(e.activeIndex);
               }}

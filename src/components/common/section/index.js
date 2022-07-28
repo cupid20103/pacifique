@@ -1,5 +1,4 @@
 import React from "react";
-// @import styles
 import { SectionContainer } from "./section.styled";
 
 const Section = (props) => {

@@ -1,10 +1,8 @@
 import React from "react";
 import Section from "../../../components/common/section";
-// @import resources
 import hand from "../../../assets/images/hand.png";
 import num from "../../../assets/images/1111.svg";
 import unique from "../../../assets/images/unique.png";
-// @import styles
 import {
   ConnectWallet,
   UniqueContent,
@@ -32,7 +30,7 @@ const Unique = () => {
             <UniqueContent>
               <h3>{"UNIQUE NFT’s"}</h3>
               <p>
-                {"Hand drawn by Sabrina Trione ― Soul & C/O of Pacifique AV"}
+                {"Hand drawn by Sabrina Trione - Soul & C/O of Pacifique AV"}
               </p>
               <b>{"MINTED RANDOMLY"}</b>
             </UniqueContent>

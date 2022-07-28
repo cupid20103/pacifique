@@ -1,5 +1,4 @@
 import React from "react";
-// @import styles
 import { RoomContainer, RoomText } from "./room.styled";
 
 const Room = (props) => {

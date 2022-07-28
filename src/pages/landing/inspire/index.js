@@ -1,9 +1,6 @@
 import React from "react";
-// @import components
 import Section from "../../../components/common/section";
-// @import styles
 import { InspireContainer, InspireContent } from "./inspire.styled";
-// @import resources
 import inspired from "../../../assets/images/faq.png";
 
 const Inspire = () => {

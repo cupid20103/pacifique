@@ -1,7 +1,5 @@
 import React from "react";
-// @import resources
 import orange from "../../assets/images/orange.svg";
-// @import styles
 import {
   DescriptionContainer,
   DescriptionContent,

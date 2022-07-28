@@ -5,5 +5,5 @@ global.Buffer = Buffer;
 global.process = {
   env: { DEBUG: undefined },
   version: "",
-  nextTick: require("next-tick"),
+  nextTick: (callback, ...args) => Promise.resolve().then(() => callback(...args)),
 };

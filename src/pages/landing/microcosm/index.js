@@ -1,11 +1,8 @@
 import React from "react";
 import { SiTwitter, SiInstagram, SiDiscord, SiMedium } from "react-icons/si";
-// @import components
 import Section from "../../../components/common/section";
-// @import resources
 import content from "../../../assets/images/vision_content.svg";
 import microcosm from "../../../assets/images/microcosm.png";
-// @import styles
 import {
   ActionGroup,
   MicrocosmContainer,

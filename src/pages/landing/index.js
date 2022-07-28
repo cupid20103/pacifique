@@ -1,7 +1,5 @@
 import React from "react";
-// @import layouts
 import { LandingLayout } from "../../layouts";
-// @import pages
 import Essential from "./essential";
 import Fondation from "./fondation";
 import Hero from "./hero";

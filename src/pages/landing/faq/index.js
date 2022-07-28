@@ -1,11 +1,8 @@
 import React from "react";
-// @import components
 import Section from "../../../components/common/section";
 import Action from "../../../components/common/action";
-// @import resources
 import faq from "../../../assets/images/faq.png";
 import Symbol from "../../../assets/images/symbol.svg";
-// @import styles
 import { FAQContainer, FAQLeft, FAQRight } from "./faq.styled";
 
 const FAQ = () => {
