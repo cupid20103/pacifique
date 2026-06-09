@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
@@ -19,7 +19,7 @@ import {
 } from "./essential.styled";
 
 const Essential = () => {
-  const swiperRef = React.useRef(null);
+  const swiperRef = useRef(null);
   const [swiperIndex, setSwiperIndex] = useState(0);
 
   return (

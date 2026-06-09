@@ -14,7 +14,11 @@ It is a single page React application with a few additional routed pages, styled
 
 ## Requirements
 
-This project dates from 2022 and targets the toolchain of that time. Use a Node.js version compatible with `react-scripts` 5 (Node 16 or 18 is recommended). Newer Node versions may fail to build.
+Node.js 16.15.1, pinned in `.nvmrc`. With nvm:
+
+```bash
+nvm use
+```
 
 ## Getting started
 

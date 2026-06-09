@@ -24,6 +24,7 @@ const Roadmap = () => {
   };
 
   const changeNav = () => {
+    if (!myRef.current) return;
     const top = myRef.current.getBoundingClientRect().top;
     const bottom = myRef.current.getBoundingClientRect().bottom;
     if (!isMobile && top < 50 && bottom > 0) {

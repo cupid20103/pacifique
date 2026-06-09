@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { EthereumContext } from "./contexts/EthereumContext";
+
 const Landing = React.lazy(() => import("./pages/landing"));
 const Value = React.lazy(() => import("./pages/description/value"));
 const Benefit = React.lazy(() => import("./pages/description/benefit"));
@@ -57,9 +58,13 @@ const App = () => {
 
   useEffect(() => {
     const setCurrentlyConnectedAccount = async () => {
-      let accounts = await web3.eth.getAccounts();
-      if (accounts && accounts.length > 0) {
-        setCurrentAcc(accounts[0]);
+      try {
+        const accounts = await web3.eth.getAccounts();
+        if (accounts && accounts.length > 0) {
+          setCurrentAcc(accounts[0]);
+        }
+      } catch (error) {
+        setCurrentAcc("");
       }
     };
     if (web3) {

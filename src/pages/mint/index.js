@@ -25,7 +25,13 @@ const MintForm = () => {
           theme: "dark",
         });
       } else {
-        await provider.request({ method: `eth_requestAccounts` });
+        try {
+          await provider.request({ method: `eth_requestAccounts` });
+        } catch (error) {
+          toast.error("Wallet connection request was rejected", {
+            theme: "dark",
+          });
+        }
       }
     } else {
       toast.error("Please install Metamask wallet in this browser", {
